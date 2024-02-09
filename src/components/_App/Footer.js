@@ -21,7 +21,7 @@ const Footer = () => {
               data-aos-duration="1200"
               data-aos-once="false"
             >
-              <div className="single-footer-widget">
+              <div className="-footer-widget">
                 <div className="logo">
                   <Link to="/">
                     <img src={Logo} alt="logo" />

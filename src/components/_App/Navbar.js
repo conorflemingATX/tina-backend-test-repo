@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/logo.png"
+import Logo from "../../images/nitcologo.jpg"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -39,7 +39,7 @@ const Navbar = () => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={Logo} alt="logo" />
+              <img src={Logo} alt="logo" style={{ width: 200, height: 50 }} />
             </Link>
 
             <button
@@ -61,7 +61,7 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#" 
+                    to="#"
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >

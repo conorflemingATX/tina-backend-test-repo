@@ -100,8 +100,10 @@ $purple-color: #c679e3;
 $bg-color: #f7fafd;
 $bg-color2: #f9f6f6;
 $hosting-main-color: #032b8d;
-$gradient-color: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
-$gradient-color2: linear-gradient(to right bottom, #1fa2ff, #00c0ff, #00d9f2, #53eedd, #a6ffcb);
+// $gradient-color: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+$gradient-color: linear-gradient(135deg, #4762b2 0%, #1b06a7 100%);
+$gradient-color2: linear-gradient(to right bottom, #441fff, #0077ff, #08a2f5, #6aa2f7, #4742eb);
+// $gradient-color2: linear-gradient(to right bottom, #1fa2ff, #00c0ff, #00d9f2, #53eedd, #a6ffcb);
 $transition: .5s;
 $font-size: 14px;
 

@@ -3353,7 +3353,8 @@ Blog CSS
   position: absolute;
   left: 20px;
   bottom: -20px;
-  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  /*background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);*/
+  background: linear-gradient(157deg, #3c24d6 0%, #43cee7 100%);
   color: #ffffff;
   padding: 8px 16px;
   font-size: 13px;

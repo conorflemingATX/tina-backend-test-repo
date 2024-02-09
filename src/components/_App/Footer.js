@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/final-logo.png"
+import Logo from "../../images/nitco-logo1.png"
 import MapImg from "../../images/map.png"
 import Shape1 from "../../images/shape1.png"
 import Shape2 from "../../images/shape2.svg"

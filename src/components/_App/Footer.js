@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../../images/logo.png"
+import Logo from "../../images/final-logo.png"
 import MapImg from "../../images/map.png"
 import Shape1 from "../../images/shape1.png"
 import Shape2 from "../../images/shape2.svg"
@@ -23,15 +23,12 @@ const Footer = () => {
             >
               <div className="single-footer-widget">
                 <div className="logo">
-                  <Link to="/it-startup">
+                  <Link to="/">
                     <img src={Logo} alt="logo" />
                   </Link>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi.
+                NITCO Inc. is a technology services company that accelerates digital automation with Artificial Intelligence, Machine Learning, Natural Language Processing and Robotic Process Automation. In addition, the company has highly skilled staff serving our clients in Integration Technologies, Data Analytics, Cloud Integration Services and various IT Consulting services.
                 </p>
               </div>
             </div>
@@ -47,13 +44,13 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul className="list">
                   <li>
-                    <Link to="/about-1">About Us</Link>
+                    <a href="https://www.nitcoinc.com/company/about/">About Us</a>
                   </li>
                   <li>
-                    <Link to="/services-1">Services</Link>
+                    <Link to="https://www.nitcoinc.com/company/careers/">Careers</Link>
                   </li>
                   <li>
-                    <Link to="/features">Features</Link>
+                    <Link to="https://www.nitcoinc.com/company/our-team/">Our Team</Link>
                   </li>
                   <li>
                     <Link to="/pricing">Our Pricing</Link>
@@ -107,22 +104,24 @@ const Footer = () => {
                 <ul className="footer-contact-info">
                   <li>
                     <Icon.MapPin />
-                    27 Division St, New York, <br /> NY 10002, USA
+                    <a href="https://www.google.com/maps/place/Nitco+Inc/@29.7750387,-95.7836527,15z/data=!4m5!3m4!1s0x0:0x179870ae18746b95!8m2!3d29.7750387!4d-95.7836527?shorturl=1" target="_blank" rel="noopener nofollow noreferrer">440 Cobia Dr., Suite 1701<br/>Katy, Texas 77494</a>
                   </li>
                   <li>
                     <Icon.Mail />
-                    Email: <a href="mailto:spet@gmail.com">spet@gmail.com</a>
+                    Email: <a href="mailto:YourPartner@nitcoinc.com">YourPartner@nitcoinc.com</a>
                   </li>
                   <li>
                     <Icon.PhoneCall />
-                    Phone: <a href="tel:321984754">+ (321) 984 754</a>
+                    <b><i>US Ohio: </i></b><a href="tel:281-503-7002">281-503-7002</a><br/>
+                  <b><i> Malaysia: </i></b><a href="tel:03-2276-3999">03-2276-3999</a><br/>
+                  <b><i> India: </i></b><a href="tel:040-29881990">040-29881990</a><br/>
                   </li>
                 </ul>
 
                 <ul className="social-links">
                   <li>
                     <a
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/NitcoIncOfficial/"
                       className="facebook"
                       target="_blank"
                       rel="noreferrer"
@@ -132,7 +131,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://twitter.com"
+                      href="https://twitter.com/nitcoofficial/"
                       className="twitter"
                       target="_blank"
                       rel="noreferrer"
@@ -152,7 +151,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com"
+                      href="https://www.linkedin.com/company/nitcoincofficial"
                       className="linkedin"
                       target="_blank"
                       rel="noreferrer"
@@ -167,14 +166,9 @@ const Footer = () => {
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
                 <p>
-                  Copyright &copy; {currentYear} Spet. All rights reserved by{" "}
-                  <a
-                    href="https://envytheme.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    EnvyTheme
-                  </a>
+                  Copyright &copy; {currentYear} Nitco, Inc. All Rights Reserved.</p>
+                  <p><a class="Footer-module--link--OttrY" href="https://www.nitcoinc.com/privacy-policy">Privacy Policy</a> |&nbsp;   
+                  <a class="Footer-module--link--OttrY" href="https://www.nitcoinc.com/cookie-policy">Cookie Policy</a>
                 </p>
               </div>
             </div>

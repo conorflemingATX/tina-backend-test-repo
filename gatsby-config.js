@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Spet - Gatsby React Technology & IT Business Company Template`,
-    description: `Gatsby React Technology & IT Business Company Template`,
+    title: `Technology Solutions Provider - AI, RPA, and More | NITCO Inc`,
+    description: `Technology Solutions Provider - AI, RPA, and More | NITCO Inc`,
     author: `@envytheme`,
-    siteUrl: `https://spet-gatsby.envytheme.com`,
+    siteUrl: `https://nitcoinc.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -37,7 +37,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `./src/images/favicon-nitco.png`, // This path is relative to the root of the site.
       },
     },
   ],

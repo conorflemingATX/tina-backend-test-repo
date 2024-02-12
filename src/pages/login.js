@@ -7,7 +7,7 @@ import PageBanner from "../components/Common/PageBanner"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-import Logo from "../images/logo.png"
+import Logo from "../images/nitco-logo1.png"
 
 const LoginPage = () => (
   <Layout>

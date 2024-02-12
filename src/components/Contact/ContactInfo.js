@@ -17,8 +17,7 @@ const ContactInfo = () => {
                   <a href="mailto:YourPartner@nitcoinc.com">
                     YourPartner@nitcoinc.com{" "}
                   </a>
-                  <a href="mailto:YourPartner@nitcoinc.com">HR@nitcoinc.com </a>
-                </p>
+                  </p>
                 {/*} <p>
                   <a href="mailto:info@spet.com">info@spet.com</a>
                   </p>*/}

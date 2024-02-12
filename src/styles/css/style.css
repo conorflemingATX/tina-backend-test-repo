@@ -274,7 +274,7 @@ textarea.form-control {
   border-radius: 0 4px 4px 0;
 }
 .btn:hover::after, .btn:hover::before {
-  width: 50%;
+  width: 30%;
 }
 
 /* btn-secondary */

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
-
 import Logo from "../../images/nitco-logo1.png"
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)

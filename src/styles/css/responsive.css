@@ -162,15 +162,23 @@
   }
   .single-features {
     padding-left: 20px;
+        /* background: linear-gradient(135deg, #43e794 0%, #2a2070 100%); */
   }
   .single-features .icon {
     position: relative;
     left: 0;
     top: 0;
+    /* background: linear-gradient(135deg, #43e794 0%, #2a2070 100%); */
     margin-bottom: 25px;
   }
   .single-features h3 {
     font-size: 17px;
+  }
+  .single-features:hover{
+    font-size: 17px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #b0f4d2 0%, #a195ed 100%);
+    /* background: linear-gradient(135deg, #43e794 0%, #2a2070 100%); */
   }
   .single-hosting-features h3 {
     font-size: 17px;

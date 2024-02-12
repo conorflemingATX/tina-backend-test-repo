@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
 import Logo from "../../images/nitco-logo1.png"
-
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
 
@@ -61,7 +60,7 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#" 
+                    to="#"
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >

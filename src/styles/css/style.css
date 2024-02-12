@@ -273,6 +273,7 @@ textarea.form-control {
   /* background: #c679e3; */
   z-index: -1;
 }
+
 .btn::after {
   left: 0;
   border-radius: 4px 0 0 4px;
@@ -284,6 +285,33 @@ textarea.form-control {
 .btn:hover::after, .btn:hover::before {
   width: 50%;
 }
+/* support button btn-light */
+.others-option .btn.btn-light::after, .others-option .btn.btn-light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  transition: 0.5s;
+  /* code added */
+  color: #2a2070 !important;
+  background: #c9cbde;
+  /* background: #c679e3; */
+  z-index: -1;
+}
+
+.others-option .btn.btn-light::after {
+  left: 0;
+  border-radius: 4px 0 0 4px;
+}
+.others-option .btn.btn-light::before {
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+.others-option .btn.btn-light:hover::after, .others-option .btn.btn-light:hover::before {
+  width: 50%;
+}
+
 
 /* btn-secondary */
 .btn.btn-secondary {
@@ -629,29 +657,60 @@ Navbar CSS
   top: -2px;
   right: -9px;
 }
+
 .startp-nav nav .others-option .btn.btn-light {
   background: transparent;
   border: 2px dashed #cdddf1;
   padding: 12px 33px;
   margin-right: 10px;
 }
-.startp-nav nav .others-option .btn.btn-light:focus {
-  color: #0e314c !important;
+/* .startp-nav nav .others-option .btn.btn-light:focus {
+  color: #0e314c !important;*/
   /* color: #0e314c !important; */
-}
-.startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus,.startp-nav nav .others-option .btn.btn-light:active {
-  color: #ffffff !important;
+/* }  */
+.startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus {
+  color: #ffffff;
   border-color: #2a2070!important;
   /* border-color: #44ce6f; */
 }
-/* .btn-light:hover {
+/* .btn-light:hover, .btn-light:focus{
+
 color:#ffffff !important;
 } */
-.startp-nav nav .others-option .btn .btn-light::after .startp-nav nav .others-option .btn.btn-light::before {
+.startp-nav nav .others-option .btn .btn-light:hover::after .startp-nav nav .others-option .btn.btn-light:hover::before {
   background: #2a2070!important;
   color:#fff;
   /* background: #44ce6f; */
 }
+
+/* .startp-nav nav .others-option .btn.btn-light {
+  background: transparent;
+  border: 2px dashed #cdddf1;
+  color:#000 !important;
+  padding: 12px 33px;
+  margin-right: 10px;
+} */
+/* .startp-nav nav .others-option .btn.btn-light:focus {
+  color: #0e314c; */
+  /* color: #0e314c !important; */
+/* } */
+/* .startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus {
+  color: #ffffff !important;
+  border-color: #2a2070; */
+  /* border-color: #44ce6f; */
+/* } */
+/* .btn-light:hover {
+color:#ffffff !important;
+} */
+/* .startp-nav nav .others-option .btn .btn-light::after .startp-nav nav .others-option .btn.btn-light::before,,.startp-nav nav .others-option .btn.btn-light:active { */
+  /* background: #2a2070!important; */
+  /* background: transparent;
+  border: 2px dashed #cdddf1;
+  padding: 12px 33px;
+  margin-right: 10px;
+  color:#2a2070 ; */
+  /* background: #44ce6f; */
+/* } */
 .startp-nav nav .others-option .btn.btn-primary {
   /* background: #065760; */
   background: #2a2070;
@@ -4467,13 +4526,14 @@ Cart CSS
   color: #2a2070 !important;
   background-color: #eaedff !important;
 }
-.cart-buttons .btn-light::before, .cart-buttons .btn-light:focus, .cart-buttons .btn-light:active {
+.cart-buttons .btn-light::before, .cart-buttons .btn-light:focus, .cart-buttons .btn-light:hover, .cart-buttons .btn-light:active {
   color: #ffffff !important;
   background-color: #2a2070 !important;
 }
 .cart-buttons .btn-light:hover:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:hover:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:hover .show > .btn-light.dropdown-toggle, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:focus .show > .btn-light.dropdown-toggle {
-  /* color: #ffffff; */
-  color: #2a2070 !important;
+  color: #ffffff;
+  background-color: #2a2070 !important;
+  /* color: #2a2070 !important; */
 
 }
 /* .cart-buttons .btn-light:focus {
@@ -4699,6 +4759,9 @@ Page Title CSS
   font-size: 28px;
   font-weight: 700;
   margin: 0;
+}
+.page-title-area .shape7 img{
+  color:#0066cc !important;
 }
 
 /*================================================

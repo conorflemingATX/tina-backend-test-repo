@@ -61,7 +61,7 @@ const NavbarStyleThree = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#" 
+                    to="#"
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >
@@ -508,7 +508,7 @@ const NavbarStyleThree = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="#" 
+                    to="#"
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >

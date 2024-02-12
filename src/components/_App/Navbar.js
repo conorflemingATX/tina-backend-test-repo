@@ -2,7 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
+<<<<<<< HEAD
 import Logo from "../../images/nitco-logo1.png"
+=======
+<<<<<<< HEAD
+import Logo from "../../images/nitco-logo1.png"
+=======
+
+
+
+import Logo from "../../images/nitco-logo1.png"
+ 
+>>>>>>> 93bc667014ddb3cdd0b51142d2978cf9c195a393
+>>>>>>> e5d54126d50205c741655b9a68290adf4bc564d1
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -61,7 +73,7 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#"
+                    to="#" 
                     onClick={e => e.preventDefault()}
                     className="nav-link"
                   >

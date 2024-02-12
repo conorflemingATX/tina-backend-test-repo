@@ -1396,10 +1396,12 @@ Services CSS
   z-index: 1;
   display: block;
   padding: 15px 12px 15px 45px;
-  color: #6084a4;
+ /* color: #6084a4;*/
+  color: #000;
   font-weight: 500;
   border-radius: 3px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  background-color: #bdc6ef;
   transition: 0.5s;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   margin-top: 20px;
@@ -3450,9 +3452,14 @@ color: #ffffff !important;
   position: absolute;
   left: 20px;
   bottom: -20px;
+<<<<<<< HEAD
   /* background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%); */
   background: linear-gradient(135deg, #2a2070 0%, #43e794 100%);
 
+=======
+  /*background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);*/
+  background: linear-gradient(157deg, #3c24d6 0%, #43cee7 100%);
+>>>>>>> e5d54126d50205c741655b9a68290adf4bc564d1
   color: #ffffff;
   padding: 8px 16px;
   font-size: 13px;

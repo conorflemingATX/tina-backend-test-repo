@@ -9,17 +9,19 @@ $purple-color: #c679e3;
 $bg-color: #f7fafd;
 $bg-color2: #f9f6f6;
 $hosting-main-color: #032b8d;
+$navy-color:#2a2070;
+$light-blue-color:#6bb3f2;
 $gradient-color: linear-gradient(135deg, #9a56ff 0%, #e36cd9 100%);
 $gradient-color2: linear-gradient(to right bottom, #1fa2ff, #00c0ff, #00d9f2, #53eedd, #a6ffcb);
 
 a {
     &:hover, &:focus {
-        color: $purple-color;
+        color: $light-blue-color;
     }
 }
 
 .btn-primary {
-    background-color: $purple-color;
+    background-color: $navy-color;
     box-shadow: 0 13px 27px 0 rgba(198, 121, 277, 0.25);
 
     &:hover, &:focus, &:active {

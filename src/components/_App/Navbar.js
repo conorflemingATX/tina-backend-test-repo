@@ -2,11 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-<<<<<<< HEAD
-import Logo from "../../images/final-logo-nitco.png"
-=======
-import Logo from "../../images/nitcologo.jpg"
->>>>>>> b1c2f38e14abbe3c83d462cc2bb91b24f1c936a6
+import Logo from "../../images/nitco-logo1.png"
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -43,7 +39,7 @@ const Navbar = () => {
               onClick={toggleNavbar}
               className="navbar-brand"
             >
-              <img src={Logo} alt="logo" style={{ width: 200, height: 50 }} />
+              <img src={Logo} alt="logo" />
             </Link>
 
             <button

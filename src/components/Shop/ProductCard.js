@@ -493,13 +493,13 @@ const ProductCard = () => {
 
                     <li className="page-item">
                       <Link to="#" className="page-link">
-                        1
+                        2
                       </Link>
                     </li>
 
                     <li className="page-item">
                       <Link to="#" className="page-link">
-                        1
+                        3
                       </Link>
                     </li>
 

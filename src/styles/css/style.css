@@ -214,14 +214,14 @@ textarea.form-control {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   /* code added */
-  color: #2a2070;
-  /* color: #ffffff !important; */
+  /* color: #2a2070; */
+  color: #ffffff !important;
   background: #0e314c;
   transform: translateY(-5px);
   box-shadow: 0 13px 27px 0 rgba(68, 84, 206, 0.25);
   /* box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25); */
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:active {
   box-shadow: unset;
 }
 .aos-init:hover
@@ -397,9 +397,10 @@ label {
 }
 .section-title .sub-title {
   display: inline-block;
-  color: #c679e3;
+  color: #2a2070;
   /* color: #c679e3; */
-  background-color: #f5dffd;
+  /* background-color: #f5dffd; */
+  background-color: #cfe2ff;
   margin-bottom: 18px;
   border-radius: 30px;
   padding: 5px 20px 4px;
@@ -638,14 +639,14 @@ Navbar CSS
   color: #0e314c !important;
   /* color: #0e314c !important; */
 }
-.startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus {
-  color: #ffffff;
+.startp-nav nav .others-option .btn.btn-light:hover, .startp-nav nav .others-option .btn.btn-light:focus,.startp-nav nav .others-option .btn.btn-light:active {
+  color: #ffffff !important;
   border-color: #2a2070!important;
   /* border-color: #44ce6f; */
 }
-.btn-light:hover{
+/* .btn-light:hover {
 color:#ffffff !important;
-}
+} */
 .startp-nav nav .others-option .btn .btn-light::after .startp-nav nav .others-option .btn.btn-light::before {
   background: #2a2070!important;
   color:#fff;
@@ -680,14 +681,19 @@ color:#ffffff !important;
   color: #ffffff;
 }
 .navbar-color-white .startp-nav nav .others-option .btn.btn-primary {
-  background: #c679e3;
+  background: #c3cbe8;
   /* background: #c679e3; */
   box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
 }
 .navbar-color-white .startp-nav nav .others-option .btn.btn-primary::after, .navbar-color-white .startp-nav nav .others-option .btn.btn-primary::before {
   background: #2a2070!important;
+  /* color:#2a2070 !important; */
   /* background: #44ce6f; */
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+}
+.startp-nav nav .others-option .btn.btn-primary:focus, .startp-nav nav .others-option .btn.btn-primary:active, .startp-nav nav .others-option .btn.btn-primary:hover{
+  color:#2a2070 !important;
+  
 }
 .navbar-color-white#header.headroom.is-sticky {
   background-color: #0e314c !important;
@@ -767,6 +773,12 @@ Main Banner CSS
 }
 .main-banner .hero-content p {
   margin-bottom: 30px;
+}
+.main-banner .hero-content  h1.aos-init:hover {
+ color:#032b8d !important;
+}
+.main-banner .hero-content p.aos-init:hover {
+  color: #2a2070 !important;
 }
 .main-banner .banner-form {
   background: #ffffff;
@@ -1535,7 +1547,7 @@ Services CSS
 .single-services-box:hover .icon {
   /* background: #44ce6f; */
   background: #2a2070!important;;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .single-services-box:hover .icon.bg-c679e3 {
   background: #c679e3;
@@ -2057,7 +2069,9 @@ Works CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  background: linear-gradient(135deg, #2a2070 0%, #43e794 100%);
+  /* background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%); */
+
   transition: 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -2219,6 +2233,9 @@ Fun Facts CSS
   opacity: 0.86;
 }
 /* Sushmitha changes */
+/* .hero-content h1:hover{
+color:#
+} */
 .single-box .icon:hover{
    svg{
     color:#2a2070 !important;
@@ -2243,12 +2260,7 @@ Fun Facts CSS
 {
   color:#ffffff !important;
 }
-
 /* blog pages changes */
-.widget .widget_tag_cloud .tagcloud a:hover{
-
-  color: #ffffff !important;
-}
 /* sushma added changes ends here */
 .funfacts-area.bg-image .section-title h2 {
   color: #ffffff;
@@ -2311,7 +2323,8 @@ Pricing CSS
   margin-bottom: 30px;
   z-index: 1;
   color:#ffffff !important;
-  background: linear-gradient(135deg, #2a2070 0%, #43e794 100%) !important;
+  /* background: linear-gradient(135deg, #43e794 0%, #2a2070 100%); */
+  background: linear-gradient(135deg, #2a2070 0%, #43e794 100%);
 }
 .pricing-table .pricing-header::before {
   content: "";
@@ -2323,7 +2336,7 @@ Pricing CSS
   border-radius: 5px 5px 0 0;
   color:#ffffff !important;
   /* background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%); */
-  background: linear-gradient(135deg, #43e794 0%, #2a2070 100%);
+  background: linear-gradient(135deg, #2a2070 0%, #43e794 100%);
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
@@ -3863,7 +3876,7 @@ Shop CSS
 }
 .single-products:hover .products-content .add-to-cart-btn, .single-products:focus .products-content .add-to-cart-btn {
   background-color: #0e314c;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .single-products:hover .products-image img, .single-products:focus .products-image img {
   transform: scale(1.1);
@@ -4142,7 +4155,8 @@ Shop Details CSS
 .products-details form .add-to-wishlist-btn {
   margin-left: 5px;
   background: transparent;
-  color: #0e314c;
+  color: #ffffff;
+  /* color: #0e314c; */
   border: 1px solid #eeeeee;
   position: relative;
   top: -2px;
@@ -4221,7 +4235,7 @@ Shop Details CSS
 }
 .products-details .products-share-social ul li a.facebook:hover {
   background: #4267b2;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .products-details .products-share-social ul li a.twitter {
   border-color: #38A1F3;
@@ -4229,7 +4243,7 @@ Shop Details CSS
 }
 .products-details .products-share-social ul li a.twitter:hover {
   background: #38A1F3;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .products-details .products-share-social ul li a.linkedin {
   border-color: #0077B5;
@@ -4237,7 +4251,7 @@ Shop Details CSS
 }
 .products-details .products-share-social ul li a.linkedin:hover {
   background: #0077B5;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .products-details .products-share-social ul li a.instagram {
   border-color: #231F20;
@@ -4245,11 +4259,11 @@ Shop Details CSS
 }
 .products-details .products-share-social ul li a.instagram:hover {
   background: #231F20;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .products-details .products-share-social ul li a:hover {
-  background: #2a2070!important;
-  color: #ffffff;
+  background: #2a2070 !important;
+  color: #ffffff !important;
 }
 
 .products-details-tabs {
@@ -4446,16 +4460,25 @@ Cart CSS
 }
 .cart-buttons .btn-light {
   background-color: #eaedff;
+  color: #2a2070 !important;
+
 }
-.cart-buttons .btn-light:hover, .cart-buttons .btn-light:focus {
-  color: #ffffff;
+.cart-buttons .btn-light:hover, .cart-buttons .btn-light::before {
+  color: #2a2070 !important;
+  background-color: #eaedff !important;
+}
+.cart-buttons .btn-light::before, .cart-buttons .btn-light:focus, .cart-buttons .btn-light:active {
+  color: #ffffff !important;
+  background-color: #2a2070 !important;
 }
 .cart-buttons .btn-light:hover:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:hover:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:hover .show > .btn-light.dropdown-toggle, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled).active, .cart-buttons .btn-light:focus:not(:disabled):not(.disabled):active, .cart-buttons .btn-light:focus .show > .btn-light.dropdown-toggle {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #2a2070 !important;
+
 }
-.cart-buttons .btn-light:focus {
+/* .cart-buttons .btn-light:focus {
   color: #ffffff;
-}
+} */
 
 .cart-totals {
   background: #ffffff;
@@ -4658,6 +4681,7 @@ Checkout CSS
 .order-details .btn.order-btn {
   display: block;
   margin-top: 25px;
+  color:#ffffff !important;
 }
 
 /*================================================
@@ -4784,8 +4808,8 @@ Pagination CSS
 .pagination-area ul .page-item .page-link svg {
   width: 16px;
 }
-.pagination-area ul .page-item.active .page-link {
-  color: #ffffff;
+.pagination-area ul .page-item.active .page-link ,.pagination-area ul .page-item .page-link:hover {
+  color: #ffffff !important;
   background-color: #2a2070!important;
   /* background-color: #44ce6f; */
 }
@@ -4914,10 +4938,13 @@ Blog Details CSS
   font-size: 14px;
 }
 .blog-details-desc .article-footer .article-tags a:hover {
-  color: #ffffff;
-  background-color: #2a2070!important;
+  color: #ffffff !important;
+  background-color: #2a2070 !important;
   /* background-color: #44ce6f; */
 }
+/* a:hover{
+  color:#ffffff 
+} */
 
 .comments-area {
   margin-top: 25px;
@@ -4964,7 +4991,7 @@ Blog Details CSS
   font-weight: 500;
 }
 .comments-area .comment-body .reply a:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #2a2070!important;
   border-color: #2a2070!important;
   /* background-color: #44ce6f; */
@@ -5638,11 +5665,12 @@ Sidebar Widget CSS
   position: absolute;
 }
 .widget-area .widget_categories ul li a {
-  color: #0e314c;
+  /* color: #0e314c; */
+  color:#2a2070 !important;
   display: block;
 }
 .widget-area .widget_categories ul li a:hover {
-  color: #2a2070!important;
+  color: #0066cc !important;
 }
 .widget-area .widget_categories ul li .post-count {
   float: right;
@@ -5690,7 +5718,7 @@ Sidebar Widget CSS
   margin-right: 8px;
 }
 .widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #2a2070!important;
   border-color: #2a2070!important;
   /* background-color: #44ce6f; */
@@ -5747,6 +5775,9 @@ Project Details CSS
   width: 20%;
   margin-top: 30px;
 }
+.project-details-information .single-info-box .btn-primary:focus, .project-details-information .single-info-box .btn-primary:hover, .project-details-information .single-info-box .btn-primary:active{
+color:#ffffff !important;
+}
 .project-details-desc .project-details-information .single-info-box h4 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -5769,8 +5800,13 @@ Project Details CSS
 .project-details-desc .project-details-information .single-info-box ul li a svg {
   width: 18px;
 }
+.project-details-desc .project-details-information .single-info-box ul li a svg:hover, .project-details-desc .project-details-information .single-info-box ul li a svg:focus {
+  width: 18px;
+  color:#2a2070 !important;
+} 
 .project-details-desc .project-details-information .single-info-box ul li a:hover {
-  color: #2a2070!important;
+  /* color: #2a2070 !important; */
+  color: #ffffff !important;
   transform: translateY(-5px);
 }
 
@@ -5894,8 +5930,8 @@ Coming Soon CSS
   width: 35px;
   height: 35px;
   line-height: 35px;
-  background: #2a2070!important;
-  color: #ffffff;
+  background-color: #2a2070 !important;
+  color: #ffffff !important;
   border-radius: 50%;
   margin: 0 2px;
 }
@@ -5915,7 +5951,8 @@ Coming Soon CSS
   background-color: #c13584;
 }
 .coming-soon-area .social-list li a:hover, .coming-soon-area .social-list li a:focus {
-  background-color: #2a2070!important;
+  color: #2a2070 !important;
+  background-color: #ffffff !important;
   /* background-color: #44ce6f; */
 }
 
@@ -6034,7 +6071,9 @@ Coming Soon CSS
   max-width: 550px;
   margin: 0 auto 25px;
 }
-
+.error-content a:hover{
+color: #ffffff !important;
+}
 /*================================================
 CTA CSS
 =================================================*/
@@ -6082,7 +6121,7 @@ CTA CSS
   background: #ffffff;
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
-.cta-right-content .buy-btn .btn-primary:hover, .cta-right-content .buy-btn .btn-primary:focus {
+.cta-right-content .buy-btn .btn-primary:hover, .cta-right-content .buy-btn .btn-primary:focus, .cta-right-content .buy-btn .btn-primary:active {
   /* color: #2a2070!important; */
   /* New line */
   color:#ffffff;
@@ -7384,7 +7423,7 @@ ML Feedback CSS
 }
 .single-ml-feedback-item .client-info span {
   display: block;
-  color: #c679e3;
+  color: #0a58ca;
   /* color: #c679e3; */
   margin-top: 5px;
   font-size: 13px;
@@ -8548,12 +8587,10 @@ Footer CSS
   width: 15px;
   color:#ffffff !important;
 }
-/* .single-footer-widget ul.social-links li a:hover {
+.single-footer-widget ul.social-links li a:hover svg{
   width: 15px;
-  svg{
-    color:#ffffff !important;
-  }
-} */
+  color:#ffffff !important;
+}
 
 
 .single-footer-widget ul.social-links li a.facebook {
@@ -8676,9 +8713,22 @@ Go Top CSS
 }
 .auth-form .foot ul li a i, .auth-form .foot ul li a svg {
   border: 1px solid #edf2f9;
+  /* border: 1px solid #2a2070; */
   width: 35px;
   height: 35px;
   line-height: 35px;
   padding: 5px;
   margin: 0 10px;
+}/*# sourceMappingURL=style.css.map */
+.auth-form .foot ul li a i, .auth-form .foot ul li a:hover svg, .auth-form .foot ul li a i, .auth-form .foot ul li a:hover svg {
+  /* border: 1px solid #edf2f9; */
+  border: 1px solid #2a2070;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  padding: 5px;
+  margin: 0 10px;
+  /* &svg{
+    color: #0066cc;
+  } */
 }/*# sourceMappingURL=style.css.map */

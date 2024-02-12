@@ -3,7 +3,8 @@
     <style>
       .cls-1 {
         font-size: 25px;
-        fill: #27eac8;
+       <!--fill: #27eac8;-->
+        fill: #1811b3;
         text-anchor: middle;
         font-family: Roboto;
       }

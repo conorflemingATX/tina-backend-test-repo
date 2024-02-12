@@ -6,7 +6,7 @@ import Footer from "../components/_App/Footer"
 import PageBanner from "../components/Common/PageBanner"
 import { Link } from "gatsby"
 
-import Logo from "../images/logo.png"
+import Logo from "../images/nitco-logo1.png"
 
 const SignUpPage = () => (
   <Layout>

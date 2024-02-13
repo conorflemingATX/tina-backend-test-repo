@@ -99,14 +99,15 @@ $paragraph-color: #6084a4;
 $purple-color: #c679e3;
 $bg-color: #f7fafd;
 $bg-color2: #f9f6f6;
+$hiperlink-color:#00FF00;
+$hyperlink-color:#0066cc;
 $hosting-main-color: #032b8d;
 // $gradient-color: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
-$gradient-color: linear-gradient(135deg, #4762b2 0%, #1b06a7 100%);
+$gradient-color: linear-gradient(135deg, #43e794 0%, #2a2070 100%);
 $gradient-color2: linear-gradient(to right bottom, #441fff, #0077ff, #08a2f5, #6aa2f7, #4742eb);
 // $gradient-color2: linear-gradient(to right bottom, #1fa2ff, #00c0ff, #00d9f2, #53eedd, #a6ffcb);
 $transition: .5s;
 $font-size: 14px;
-
 body {
     font-family: $font-family;
     padding: 0;
@@ -211,13 +212,13 @@ textarea.form-control {
 .btn-primary {
     color: $white-color;
     background-color: $light-green-color;
-    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
+    box-shadow: 0 13px 27px 0 rgba(68, 89, 206, 0.25);
 
     &:hover, &:focus, &:active {
         color: $white-color;
         background: $black-color;
         transform: translateY(-5px);
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
+        box-shadow: 0 13px 27px 0 rgba(132, 121, 227, 0.25);
     }
     &.focus, &:focus {
         box-shadow: unset;
@@ -229,17 +230,17 @@ textarea.form-control {
         color: $white-color;
         background: $black-color;
         transform: translateY(-5px);
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
+        box-shadow: 0 13px 27px 0 rgba(137, 121, 227, 0.25);
     }
     &.disabled, &:disabled {
         color: $white-color;
         background-color: $light-green-color;
-        box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
+        box-shadow: 0 13px 27px 0 rgba(77, 68, 206, 0.25);
         opacity: 1;
 
         &:hover, &:focus {
             background: $black-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
+            box-shadow: 0 13px 27px 0 rgba(121, 140, 227, 0.25);
         }
     }
 }
@@ -601,7 +602,7 @@ Navbar CSS
                                     color: $navlink-color;
 
                                     &:hover, &:focus, &.active {
-                                        color: $light-green-color;
+                                        color: $navy-color;
                                     }
                                 }
                             }
@@ -613,7 +614,7 @@ Navbar CSS
                                 top: -10px !important;
                             }
                             a {
-                                color: $light-green-color;
+                                color: $navy-color;
                             }
                         }
                     }
@@ -657,29 +658,33 @@ Navbar CSS
             .btn {
                 &.btn-light {
                     background: transparent;
-                    border: 2px dashed #cdf1d8;
+                    border: 2px dashed #cdd3f1;
                     padding: 12px 33px;
                     margin: {
                         right: 10px;
                     }
                     &:focus {
-                        color: $black-color !important
+                        color: $white-color !important
                     }
                     &:hover, &:focus {
+                        //changes
                         color: $white-color;
-                        border-color: $light-green-color;
+                        border-color: $navy-color;
                     }
                     &::after, &::before {
-                        background: $light-green-color;
+                        //changes
+                        background: $navy-color;
                     }
                 }
                 &.btn-primary {
-                    background: $purple-color;
-                    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+                    //changes
+                    background: $navy-color;
+                    box-shadow: 0 13px 27px 0 rgba(139, 121, 227, 0.25);
 
                     &::after, &::before {
-                        background: $light-green-color;
-                        box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
+                        //changes
+                        background: $light-blue-color;
+                        box-shadow: 0 13px 27px 0 rgba(68, 70, 206, 0.25);
                     }
                 }
             }
@@ -703,7 +708,8 @@ Navbar CSS
                         color: $white-color;
 
                         &:hover, &:focus, &.active {
-                            color: $light-green-color;
+                            //changes
+                            color: $navy-color;
                         }
                     }
                 }
@@ -714,7 +720,8 @@ Navbar CSS
                 }
                 .btn {
                     &.btn-primary {
-                        background: $purple-color;
+                        //Changes
+                        background: $light-blue-color;
                         box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
     
                         &::after, &::before {
@@ -1702,7 +1709,8 @@ Bigdata Services CSS
         z-index: -1;
     }
     .learn-more-btn {
-        color: $light-green-color;
+        color: $light-blue-color;
+        // color: $light-green-color;
         font-weight: 500;
         display: inline-block;
         margin-top: 5px;
@@ -3246,7 +3254,8 @@ Feedback CSS
         top: -25px;
         left: -25px;
         color: $white-color;
-        background: linear-gradient(135deg, #43e794 0%, #23bdb8 100%);
+        background: linear-gradient(135deg, #43e794 0%, #2a2070 100%);
+        // background: linear-gradient(135deg, #43e794 0%, #23bdb8 100%);
         width: 60px;
         height: 60px;
         line-height: 60px;
@@ -8633,6 +8642,7 @@ Agency Main Banner CSS
     }
     .shape2 {
         left: 5%;
+        
     }
     .shape8 {
         right: 50%;

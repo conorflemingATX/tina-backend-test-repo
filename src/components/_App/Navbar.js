@@ -661,7 +661,7 @@ const Navbar = () => {
                     onClick={toggleNavbar}
                     className="nav-link"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </li>
               </ul>
@@ -669,7 +669,7 @@ const Navbar = () => {
 
             <div className="others-option">
              
-              <Link to="/contact" className="btn btn-light">
+             /<Link to="/contact" className="btn btn-light">
                 Support
               </Link>
 

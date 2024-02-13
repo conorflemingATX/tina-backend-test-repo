@@ -1,7 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
+
+
+
 import Logo from "../../images/nitco-logo1.png"
+
+
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
 
@@ -663,11 +668,7 @@ const Navbar = () => {
             </div>
 
             <div className="others-option">
-              <Link to="/cart" className="cart-wrapper-btn">
-                <Icon.ShoppingCart />
-                <span>0</span>
-              </Link>
-
+             
               <Link to="/contact" className="btn btn-light">
                 Support
               </Link>

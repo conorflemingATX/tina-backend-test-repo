@@ -669,7 +669,6 @@ const Navbar = () => {
 
             <div className="others-option">
              
-
               <Link to="/contact" className="btn btn-light">
                 Support
               </Link>

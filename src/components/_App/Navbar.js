@@ -2,10 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import * as Icon from "react-feather"
 
-
-
 import Logo from "../../images/nitco-logo1.png"
-
 
 const Navbar = () => {
   const [menu, setMenu] = React.useState(true)
@@ -64,14 +61,15 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#"
-                    onClick={e => e.preventDefault()}
+                    to="/it-startup"
+                    // onClick={e => e.preventDefault()}
                     className="nav-link"
                   >
-                    Home <Icon.ChevronDown />
+                    Home
+                    {/* <Icon.ChevronDown /> */}
                   </Link>
 
-                  <ul className="dropdown-menu">
+                  {/* <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
                         to="/it-startup"
@@ -181,7 +179,7 @@ const Navbar = () => {
                         PC Repair
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
 
                 <li className="nav-item">
@@ -597,7 +595,7 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link
                         to="/blog-3"
                         activeClassName="active"
@@ -639,7 +637,7 @@ const Navbar = () => {
                       >
                         Blog Right Sidebar 3
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li className="nav-item">
                       <Link
@@ -653,8 +651,96 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li className="nav-item">
+                  <Link
+                    to="#"
+                    onClick={e => e.preventDefault()}
+                    className="nav-link"
+                  >
+                    CaseStudy <Icon.ChevronDown />
+                  </Link>
+
+                  <ul className="dropdown-menu">
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-1"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        CaseStudy Grid
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-2"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        CaseStudy Right Sidebar
+                      </Link>
+                    </li>
+
+                    {/* <li className="nav-item">
+                      <Link
+                        to="/blog-3"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        Blog Grid 2
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-4"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        Blog Right Sidebar 2
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-5"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        Blog Grid 3
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-6"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        Blog Right Sidebar 3
+                      </Link>
+                    </li> */}
+
+                    <li className="nav-item">
+                      <Link
+                        to="/blog-details"
+                        activeClassName="active"
+                        onClick={toggleNavbar}
+                        className="nav-link"
+                      >
+                        CaseStudy Details
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+
+                {/* <li className="nav-item">
                   <Link
                     to="/contact"
                     activeClassName="active"
@@ -663,16 +749,14 @@ const Navbar = () => {
                   >
                     Contact Us
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
             <div className="others-option">
-             
-             /<Link to="/contact" className="btn btn-light">
+              <Link to="/contact" className="btn btn-light">
                 Support
               </Link>
-
               <Link to="/login" className="btn btn-primary">
                 Login
               </Link>

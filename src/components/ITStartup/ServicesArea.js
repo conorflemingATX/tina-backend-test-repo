@@ -2,7 +2,12 @@ import React from "react"
 import * as Icon from "react-feather"
 
 // Cloud Hosting Services Images
+
 import CercleShape from "../../images/services-right-image/cercle-shape1.png"
+
+// import CercleShape from "../../images/services-right-image/cercle-shape-edited.png"
+
+
 import ServiceRightMainPic from "../../images/services-right-image/service-right-main-pic.png"
 
 // Design & Development Images

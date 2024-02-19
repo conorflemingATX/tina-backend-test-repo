@@ -2,7 +2,12 @@ import React from "react"
 
 import ManStand from "../../images/why-choose-us-image/man-stand.png"
 import Database from "../../images/why-choose-us-image/database.png"
+
 import CercleShape from "../../images/services-left-image/cercle-shape1.png"
+
+// import CercleShape from "../../images/services-left-image/cercle-shape.png"
+// import CercleShape from "../../images/services-left-image/cercle-shape-edited.png"
+
 import MainStatic from "../../images/why-choose-us-image/main-static.png"
 
 const WhyChoose = () => {

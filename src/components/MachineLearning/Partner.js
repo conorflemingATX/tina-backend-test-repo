@@ -20,6 +20,8 @@ import PartnerHoverImg7 from "../../images/partner-img/partner-hover7.png"
 const PartnerStyleTwo = () => {
   return (
     <>
+      <br></br>
+      <br></br>
       <div className="ml-partner-area mt-minus-top ptb-80 pb-0">
         <div className="container">
           <Swiper

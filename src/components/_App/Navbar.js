@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <Link
-              to="/it-startup"
+              to="#"
               onClick={toggleNavbar}
               className="navbar-brand"
             >
@@ -59,14 +59,11 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#"
-                    onClick={e => e.preventDefault()}
+                    to="/"
                     className="nav-link"
-                  >
-                    Home <Icon.ChevronDown />
-                  </Link>
+                  > Home </Link></li>
 
-                  <ul className="dropdown-menu">
+                 {/* <ul className="dropdown-menu">
                     <li className="nav-item">
                       <Link
                         to="/it-startup"
@@ -177,7 +174,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+  </li>*/}
 
                 <li className="nav-item">
                   <Link
@@ -504,7 +501,7 @@ const Navbar = () => {
                   </ul>
                 </li>
 
-                <li className="nav-item">
+               {/*} <li className="nav-item">
                   <Link
                     to="#"
                     onClick={e => e.preventDefault()}
@@ -558,7 +555,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li>*/}
 
                 <li className="nav-item">
                   <Link
@@ -663,10 +660,10 @@ const Navbar = () => {
             </div>
 
             <div className="others-option">
-              <Link to="/cart" className="cart-wrapper-btn">
+              {/*<Link to="/cart" className="cart-wrapper-btn">
                 <Icon.ShoppingCart />
                 <span>0</span>
-              </Link>
+                </Link>*/}
 
               <Link to="/contact" className="btn btn-light">
                 Support

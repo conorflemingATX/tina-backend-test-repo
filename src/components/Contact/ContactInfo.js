@@ -55,19 +55,19 @@ const ContactInfo = () => {
                 <h3>Call Here</h3>
                 <p>
                   <b>
-                    <i>US Ohio: </i>
+                    <i>US Ohio : </i>
                   </b>
                   <a href="tel:281-503-7002">281-503-7002</a>
                 </p>
                 <p>
                   <b>
-                    <i> Malaysia: </i>
+                    <i> Malaysia : </i>
                   </b>
                   <a href="tel:03-2276-3999">03-2276-3999</a>
                 </p>
                 <p>
                   <b>
-                    <i> India: </i>
+                    <i> India : </i>
                   </b>
                   <a href="tel:040-29881990">040-29881990</a>
                 </p>

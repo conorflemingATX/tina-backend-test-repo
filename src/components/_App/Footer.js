@@ -112,9 +112,9 @@ const Footer = () => {
                   </li>
                   <li>
                     <Icon.PhoneCall />
-                    <b><i>US Ohio: </i></b><a href="tel:281-503-7002">281-503-7002</a><br/>
-                  <b><i> Malaysia: </i></b><a href="tel:03-2276-3999">03-2276-3999</a><br/>
-                  <b><i> India: </i></b><a href="tel:040-29881990">040-29881990</a><br/>
+                    US Ohio : <a href="tel:281-503-7002">281-503-7002</a><br/>
+                   Malaysia : <a href="tel:03-2276-3999">03-2276-3999</a><br/>
+                   India : <a href="tel:040-29881990">040-29881990</a><br/>
                   </li>
                 </ul>
 

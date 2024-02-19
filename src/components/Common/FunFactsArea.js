@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import MapImg from "../../images/map.png"
+//import CoverPage from "../../images/cover-page.png";
 
 const FunFactsArea = () => {
   return (
@@ -55,7 +56,7 @@ const FunFactsArea = () => {
               Contact Us
             </Link>
           </div>
-
+         
           <div className="map-bg">
             <img src={MapImg} alt="map" />
           </div>

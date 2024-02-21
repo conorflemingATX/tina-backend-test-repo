@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 import * as Icon from "react-feather"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Autoplay } from "swiper"
@@ -61,13 +61,13 @@ const RecentWorks = () => {
           <SwiperSlide className="single-works">
             <img src={WorksImage1} alt="Works" />
 
-            <Link to="/project-details" className="icon">
+            <Link href="/project-details" className="icon">
               <Icon.Settings />
             </Link>
 
             <div className="works-content">
               <h3>
-                <Link to="/project-details">Incredible infrastructure</Link>
+                <Link href="/project-details">Incredible infrastructure</Link>
               </h3>
               <p>
                 Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -79,13 +79,13 @@ const RecentWorks = () => {
           <SwiperSlide className="single-works">
             <img src={WorksImage2} alt="Works" />
 
-            <Link to="/project-details" className="icon">
+            <Link href="/project-details" className="icon">
               <Icon.Settings />
             </Link>
 
             <div className="works-content">
               <h3>
-                <Link to="/project-details">Email Notifications</Link>
+                <Link href="/project-details">Email Notifications</Link>
               </h3>
               <p>
                 Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -97,13 +97,13 @@ const RecentWorks = () => {
           <SwiperSlide className="single-works">
             <img src={WorksImage3} alt="Works" />
 
-            <Link to="/project-details" className="icon">
+            <Link href="/project-details" className="icon">
               <Icon.Settings />
             </Link>
 
             <div className="works-content">
               <h3>
-                <Link to="/project-details">Best Analytics Audits</Link>
+                <Link href="/project-details">Best Analytics Audits</Link>
               </h3>
               <p>
                 Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -115,13 +115,13 @@ const RecentWorks = () => {
           <SwiperSlide className="single-works">
             <img src={WorksImage4} alt="Works" />
 
-            <Link to="/project-details" className="icon">
+            <Link href="/project-details" className="icon">
               <Icon.Settings />
             </Link>
 
             <div className="works-content">
               <h3>
-                <Link to="/project-details">Simple Dashboard</Link>
+                <Link href="/project-details">Simple Dashboard</Link>
               </h3>
               <p>
                 Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -133,13 +133,13 @@ const RecentWorks = () => {
           <SwiperSlide className="single-works">
             <img src={WorksImage5} alt="Works" />
 
-            <Link to="/project-details" className="icon">
+            <Link href="/project-details" className="icon">
               <Icon.Settings />
             </Link>
 
             <div className="works-content">
               <h3>
-                <Link to="/project-details">Information Retrieval</Link>
+                <Link href="/project-details">Information Retrieval</Link>
               </h3>
               <p>
                 Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor

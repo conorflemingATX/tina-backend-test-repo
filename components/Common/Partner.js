@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 
 import PartnerImg2 from "../../images/partner-img/partner-2.png"
 import PartnerHoverImg2 from "../../images/partner-img/partner-hover2.png"
@@ -22,7 +22,7 @@ const Partner = () => {
           <h3>Ready to talk?</h3>
           <p>Our team is here to answer your question about Spet</p>
 
-          <Link to="/contact" className="btn btn-primary">
+          <Link href="/contact" className="btn btn-primary">
             Contact Us
           </Link>
 

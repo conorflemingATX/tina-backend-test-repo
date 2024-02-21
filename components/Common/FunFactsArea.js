@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 
 import MapImg from "../../images/map.png"
 //import CoverPage from "../../images/cover-page.png";
@@ -52,7 +52,7 @@ const FunFactsArea = () => {
             <h3>Have Any Questions About Us?</h3>
             <p>Don't hesitate to contact us</p>
 
-            <Link to="/contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Contact Us
             </Link>
           </div>

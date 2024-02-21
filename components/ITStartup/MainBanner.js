@@ -1,5 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
+import Image from 'next/image'
+import { tinaField } from "tinacms/dist/react";
 
 // Banner Images
 import Man from "../../images/banner-image/man.png"
@@ -25,7 +27,8 @@ import Shape3 from "../../images/shape3.svg"
 import Shape4 from "../../images/shape4.svg"
 import Shape5 from "../../images/shape5.png"
 
-const MainBanner = () => {
+const MainBanner = ({ data }) => {
+    const { mainHeading, taglineText, ctaText } = data.page;
   return (
     <>
       <div className="main-banner">
@@ -40,8 +43,9 @@ const MainBanner = () => {
                       data-aos-delay="100"
                       data-aos-duration="1200"
                       data-aos-once="false"
+                      data-tina-field={tinaField(data, "mainHeading")}
                     >
-                      Secure IT Solutions For a More Secure Environment
+                      {mainHeading}
                     </h1>
                     <p
                       data-aos="fade-up"
@@ -49,20 +53,17 @@ const MainBanner = () => {
                       data-aos-duration="1200"
                       data-aos-once="false"
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida
+                      {taglineText}
                     </p>
 
                     <Link
-                      to="/contact"
-                      className="btn btn-primary"
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                      data-aos-duration="1200"
-                      data-aos-once="false"
-                    >
-                      Get Started
+                      href="/contact">
+                      <a 
+                         className="btn btn-primary"
+                         data-aos="fade-up"
+                         data-aos-delay="300"
+                         data-aos-duration="1200"
+                         data-aos-once="false">{ctaText}</a>
                     </Link>
                   </div>
                 </div>
@@ -70,91 +71,91 @@ const MainBanner = () => {
                 <div className="col-lg-6 offset-lg-1">
                   <div className="banner-image">
                     <img
-                      src={Man}
+                      {...Man}
                       className="animate__animated animate__fadeInDown animate__delay-0.1s"
                       alt="man"
                     />
 
                     <img
-                      src={Code}
+                      {...Code}
                       className="animate__animated animate__fadeInUp animate__delay-0.1s"
                       alt="code"
                     />
 
                     <img
-                      src={Carpet}
+                      {...Carpet}
                       className="animate__animated animate__fadeInLeft animate__delay-0.1s"
                       alt="carpet"
                     />
 
                     <img
-                      src={Bin}
+                      {...Bin}
                       className="animate__animated animate__zoomIn animate__delay-0.1s"
                       alt="bin"
                     />
 
                     <img
-                      src={Book}
+                      {...Book}
                       className="animate__animated animate__bounceIn animate__delay-0.1s"
                       alt="book"
                     />
 
                     <img
-                      src={Dekstop}
+                      {...Dekstop}
                       className="animate__animated animate__fadeInDown animate__delay-0.1s"
                       alt="dekstop"
                     />
 
                     <img
-                      src={Dot}
+                      {...Dot}
                       className="animate__animated animate__zoomIn animate__delay-0.1s"
                       alt="dot"
                     />
 
                     <img
-                      src={FlowerTopBig}
+                      {...FlowerTopBig}
                       className="animate__animated animate__fadeInUp animate__delay-0.1s"
                       alt="flower-top-big"
                     />
 
                     <img
-                      src={FlowerTop}
+                      {...FlowerTop}
                       className="animate__animated animate__rotateIn animate__delay-0.1s"
                       alt="flower-top"
                     />
 
                     <img
-                      src={Keyboard}
+                      {...Keyboard}
                       className="animate__animated animate__fadeInUp animate__delay-0.1s"
                       alt="keyboard"
                     />
 
                     <img
-                      src={Pen}
+                      {...Pen}
                       className="animate__animated animate__zoomIn animate__delay-0.1s"
                       alt="pen"
                     />
 
                     <img
-                      src={Table}
+                      {...Table}
                       className="animate__animated animate__zoomIn animate__delay-0.1s"
                       alt="table"
                     />
 
                     <img
-                      src={TeaCup}
+                      {...TeaCup}
                       className="animate__animated animate__fadeInLeft animate__delay-0.1s"
                       alt="tea-cup"
                     />
 
                     <img
-                      src={HeadPhone}
+                      {...HeadPhone}
                       className="animate__animated animate__rollIn animate__delay-0.1"
                       alt="headphone"
                     />
 
                     <img
-                      src={MainPic}
+                      {...MainPic}
                       className="animate__animated animate__fadeInUp animate__delay-0.1"
                       alt="main-pic"
                     />
@@ -167,28 +168,28 @@ const MainBanner = () => {
 
         {/* Shape Images */}
         <div className="shape1">
-          <img src={Shape1} alt="shape" />
+          <img {...Shape1} alt="shape" />
         </div>
         <div className="shape2 rotateme">
-          <img src={Shape2} alt="shape" />
+          <img {...Shape2} alt="shape" />
         </div>
         <div className="shape3">
-          <img src={Shape3} alt="shape" />
+          <img {...Shape3} alt="shape" />
         </div>
         <div className="shape4">
-          <img src={Shape4} alt="shape" />
+          <img {...Shape4} alt="shape" />
         </div>
         <div className="shape5">
-          <img src={Shape5} alt="shape" />
+          <img {...Shape5} alt="shape" />
         </div>
         <div className="shape6 rotateme">
-          <img src={Shape4} alt="shape" />
+          <img {...Shape4} alt="shape" />
         </div>
         <div className="shape7">
-          <img src={Shape4} alt="shape" />
+          <img {...Shape4} alt="shape" />
         </div>
         <div className="shape8 rotateme">
-          <img src={Shape2} alt="shape" />
+          <img {...Shape2} alt="shape" />
         </div>
       </div>
     </>

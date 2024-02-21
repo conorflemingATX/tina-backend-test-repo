@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 import * as Icon from "react-feather"
 
 import Logo from "../../images/nitco-logo1.png"
@@ -23,8 +23,8 @@ const Footer = () => {
             >
               <div className="-footer-widget">
                 <div className="logo">
-                  <Link to="/">
-                    <img src={Logo} alt="logo" />
+                  <Link href="/">
+                    <img {...Logo} alt="logo" />
                   </Link>
                 </div>
                 <p>
@@ -47,16 +47,16 @@ const Footer = () => {
                     <a href="https://www.nitcoinc.com/company/about/">About Us</a>
                   </li>
                   <li>
-                    <Link to="https://www.nitcoinc.com/company/careers/">Careers</Link>
+                    <Link href="https://www.nitcoinc.com/company/careers/">Careers</Link>
                   </li>
                   <li>
-                    <Link to="https://www.nitcoinc.com/company/our-team/">Our Team</Link>
+                    <Link href="https://www.nitcoinc.com/company/our-team/">Our Team</Link>
                   </li>
                   <li>
-                    <Link to="/pricing">Our Pricing</Link>
+                    <Link href="/pricing">Our Pricing</Link>
                   </li>
                   <li>
-                    <Link to="/blog-1">Latest News</Link>
+                    <Link href="/blog-1">Latest News</Link>
                   </li>
                 </ul>
               </div>
@@ -73,19 +73,19 @@ const Footer = () => {
                 <h3>Support</h3>
                 <ul className="list">
                   <li>
-                    <Link to="/faq">FAQ's</Link>
+                    <Link href="/faq">FAQ's</Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/term-condition">Terms & Condition</Link>
+                    <Link href="/term-condition">Terms & Condition</Link>
                   </li>
                   <li>
-                    <Link to="/team">Team</Link>
+                    <Link href="/team">Team</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -167,22 +167,22 @@ const Footer = () => {
               <div className="copyright-area">
                 <p>
                   Copyright &copy; {currentYear} Nitco, Inc. All Rights Reserved.</p>
-                  <p><a class="Footer-module--link--OttrY" href="https://www.nitcoinc.com/privacy-policy">Privacy Policy</a> |&nbsp;   
-                  <a class="Footer-module--link--OttrY" href="https://www.nitcoinc.com/cookie-policy">Cookie Policy</a>
+                  <p><a className="Footer-module--link--OttrY" href="https://www.nitcoinc.com/privacy-policy">Privacy Policy</a> |&nbsp;   
+                  <a className="Footer-module--link--OttrY" href="https://www.nitcoinc.com/cookie-policy">Cookie Policy</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <img src={MapImg} className="map" alt="map" />
+        <img {...MapImg} className="map" alt="map" />
 
         {/* Shape Images */}
         <div className="shape1">
-          <img src={Shape1} alt="shape" />
+          <img {...Shape1} alt="shape" />
         </div>
         <div className="shape8 rotateme">
-          <img src={Shape2} alt="shape" />
+          <img {...Shape2} alt="shape" />
         </div>
       </footer>
     </>

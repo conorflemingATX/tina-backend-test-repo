@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 import * as Icon from "react-feather"
 
 import BlogImg1 from "../../images/blog-image/blog1.jpg"
@@ -30,7 +30,7 @@ const BlogPost = () => {
             >
               <div className="single-blog-post">
                 <div className="blog-image">
-                  <Link to="/blog-details">
+                  <Link href="/blog-details">
                     <img src={BlogImg1} alt="Blog Post" />
                   </Link>
 
@@ -41,13 +41,13 @@ const BlogPost = () => {
 
                 <div className="blog-post-content">
                   <h3>
-                    <Link to="/blog-details">
-                      The Security Risks of Changing Package Owners
+                    <Link href="/blog-details">
+                      <>The Security Risks of Changing Package Owners</>
                     </Link>
                   </h3>
 
                   <span>
-                    By <Link to="/author">Admin</Link>
+                    By <Link href="/author">Admin</Link>
                   </span>
 
                   <p>
@@ -56,8 +56,8 @@ const BlogPost = () => {
                     aliqua. Quis ipsum suspendisse.
                   </p>
 
-                  <Link to="/blog-details" className="read-more-btn">
-                    Read More <Icon.ArrowRight />
+                  <Link href="/blog-details" className="read-more-btn">
+                    <>Read More <Icon.ArrowRight /></>
                   </Link>
                 </div>
               </div>
@@ -72,7 +72,7 @@ const BlogPost = () => {
             >
               <div className="single-blog-post">
                 <div className="blog-image">
-                  <Link to="/blog-details">
+                  <Link href="/blog-details">
                     <img src={BlogImg2} alt="Blog Post" />
                   </Link>
 
@@ -83,13 +83,13 @@ const BlogPost = () => {
 
                 <div className="blog-post-content">
                   <h3>
-                    <Link to="/blog-details">
-                      Tips to Protecting Your Business and Family
+                    <Link href="/blog-details">
+                      <>Tips to Protecting Your Business and Family</>
                     </Link>
                   </h3>
 
                   <span>
-                    By <Link to="/author">Smith</Link>
+                    By <Link href="/author">Smith</Link>
                   </span>
 
                   <p>
@@ -98,8 +98,8 @@ const BlogPost = () => {
                     aliqua. Quis ipsum suspendisse.
                   </p>
 
-                  <Link to="/blog-details" className="read-more-btn">
-                    Read More <Icon.ArrowRight />
+                  <Link href="/blog-details" className="read-more-btn">
+                    <>Read More <Icon.ArrowRight /></>
                   </Link>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const BlogPost = () => {
             >
               <div className="single-blog-post">
                 <div className="blog-image">
-                  <Link to="/blog-details">
+                  <Link href="/blog-details">
                     <img src={BlogImg3} alt="Blog Post" />
                   </Link>
 
@@ -125,13 +125,13 @@ const BlogPost = () => {
 
                 <div className="blog-post-content">
                   <h3>
-                    <Link to="/blog-details">
-                      Protect Your Workplace from Cyber Attacks
+                    <Link href="/blog-details">
+                      <>Protect Your Workplace from Cyber Attacks</>
                     </Link>
                   </h3>
 
                   <span>
-                    By <Link to="/author">John</Link>
+                    By <Link href="/author">John</Link>
                   </span>
 
                   <p>
@@ -140,8 +140,8 @@ const BlogPost = () => {
                     aliqua. Quis ipsum suspendisse.
                   </p>
 
-                  <Link to="/blog-details" className="read-more-btn">
-                    Read More <Icon.ArrowRight />
+                  <Link href="/blog-details" className="read-more-btn">
+                    <>Read More <Icon.ArrowRight /></>
                   </Link>
                 </div>
               </div>

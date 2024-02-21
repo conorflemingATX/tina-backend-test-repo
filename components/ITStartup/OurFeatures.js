@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
+
 import * as Icon from "react-feather"
 
 const OurFeatures = () => {
@@ -29,7 +30,7 @@ const OurFeatures = () => {
                   <Icon.Settings />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Incredible Infrastructure</Link>
+                  <Link href="/feature-details">Incredible Infrastructure</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -50,7 +51,7 @@ const OurFeatures = () => {
                   <Icon.Mail />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Email Notifications</Link>
+                  <Link href="/feature-details">Email Notifications</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -71,7 +72,7 @@ const OurFeatures = () => {
                   <Icon.Grid />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Simple Dashboard</Link>
+                  <Link href="/feature-details">Simple Dashboard</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -92,7 +93,7 @@ const OurFeatures = () => {
                   <Icon.Info />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Information Retrieval</Link>
+                  <Link href="/feature-details">Information Retrieval</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -113,7 +114,7 @@ const OurFeatures = () => {
                   <Icon.Box />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Drag & Drop Functionality</Link>
+                  <Link href="/feature-details">Drag & Drop Functionality</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
@@ -134,7 +135,7 @@ const OurFeatures = () => {
                   <Icon.Bell />
                 </div>
                 <h3>
-                  <Link to="/feature-details">Deadline Reminders</Link>
+                  <Link href="/feature-details">Deadline Reminders</Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor

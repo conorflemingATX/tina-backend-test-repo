@@ -15,9 +15,8 @@ import ServiceLeftMainPic from "../../images/services-left-image/service-left-ma
 
 const ServicesArea = ({ data }) => {
     const { heading, text, services } = data;
-    const fullServices = services.slice(0, 8);
+    const fullServices = Array.isArray(services) ? services.slice(0, 8) : null;
   return (
-    <>
       <div className="services-area ptb-80 bg-f7fafd">
         <div className="container">
           <div className="row justify-content-center align-items-center">
@@ -36,15 +35,17 @@ const ServicesArea = ({ data }) => {
                 </p>
               </div>
               <div className="row">
-                {fullServices.map(({ serviceName }, i) => {
-                    return (
-                        <div key={i + "service"}className="col-lg-6 col-md-6">
-                          <div className="box">
-                            <Icon.Database /> {serviceName}
-                          </div>
-                        </div>
-                    );
-                })}
+                {fullServices != null 
+                    ? fullServices.map(({ serviceName }, i) => {
+                        return (
+                            <div key={i + "service"}className="col-lg-6 col-md-6">
+                              <div className="box">
+                                <Icon.Database /> {serviceName}
+                              </div>
+                            </div>
+                        );
+                    })
+                    : null}
               </div>
             </div>
             <div
@@ -66,7 +67,6 @@ const ServicesArea = ({ data }) => {
           </div>
         </div>
       </div>
-    </>
   )
 }
 

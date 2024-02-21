@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { tinaField } from "tinacms/dist/react";
 
+import MainBanner from "../components/ITStartup/MainBanner";
 import Features from "../components/ITStartup/Features"
 import ServicesArea from "../components/ITStartup/ServicesArea"
 import OurFeatures from "../components/ITStartup/OurFeatures"

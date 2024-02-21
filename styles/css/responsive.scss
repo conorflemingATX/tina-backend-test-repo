@@ -115,8 +115,7 @@ $value_seven: 1550px;
     }
 
     .boxes-area {
-        margin-top: 0;
-        padding-bottom: 20px;
+      z-index: 1;
     }
     .single-box {
         margin-bottom: 30px;

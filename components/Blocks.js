@@ -20,6 +20,12 @@ export default ({ page }) => {
         <>
           {blocks.map((block, i) => {
               switch (block.__typename) {
+                case "PageBlocksMainBannerBlock":
+                    return (
+                        <Fragment key={i + block.__typename}>
+                          <MainBanner data={block} />
+                        </Fragment>
+                    );
                 case "PageBlocksFeaturesBlock":
                   return (
                       <Fragment key={i + block.__typename}>

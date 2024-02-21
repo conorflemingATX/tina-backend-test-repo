@@ -1,5 +1,6 @@
-import featuresBlock from "./blocks/featuresBlock.js";
-import servicesAreaBlock from "./blocks/servicesAreaBlock.js";
+import mainBannerBlock from "./blocks/mainBannerBlock";
+import featuresBlock from "./blocks/featuresBlock";
+import servicesAreaBlock from "./blocks/servicesAreaBlock";
 
 /**
  * @type {import('tinacms').Collection}
@@ -11,29 +12,12 @@ export default {
   format: "mdx",
     fields: [
         {
-            type: "string",
-            name: "mainHeading",
-            label: "Main Heading",
-            required: true
-        },
-        {
-            type: "string",
-            name: "taglineText",
-            label: "Tag Line Text",
-            required: true
-        },
-        {
-            type: "string",
-            name: "ctaText",
-            label: "Call To Action Button Text",
-            required: true
-        },
-        {
             type: "object",
             list: true,
             name: "blocks",
             label: "Sections",
             templates: [
+                mainBannerBlock,
                 featuresBlock,
                 servicesAreaBlock
             ]

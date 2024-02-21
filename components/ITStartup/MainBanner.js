@@ -28,7 +28,7 @@ import Shape4 from "../../images/shape4.svg"
 import Shape5 from "../../images/shape5.png"
 
 const MainBanner = ({ data }) => {
-    const { mainHeading, taglineText, ctaText } = data.page;
+    const { mainHeading, taglineText, ctaButtonText, ctaButtonLink } = data;
   return (
     <>
       <div className="main-banner">
@@ -57,13 +57,13 @@ const MainBanner = ({ data }) => {
                     </p>
 
                     <Link
-                      href="/contact">
+                      href={ctaButtonLink ? ctaButtonLink : ""}>
                       <a 
                          className="btn btn-primary"
                          data-aos="fade-up"
                          data-aos-delay="300"
                          data-aos-duration="1200"
-                         data-aos-once="false">{ctaText}</a>
+                         data-aos-once="false">{ctaButtonText}</a>
                     </Link>
                   </div>
                 </div>

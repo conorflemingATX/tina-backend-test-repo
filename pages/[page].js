@@ -8,13 +8,14 @@ export default (props) => <Page {...props} />;
 export async function getStaticPaths() {
     // Filter by pageType === "none" || == null.
     const pagesResponse = await client.queries.pageConnection({
-        filter: { pageType: { eq: "" } } 
+        filter: { pageType: { eq: "none" } }
     });
-    const pages = pagesResponse?.data?.pageConnection?.edges.map(({ node }) => node);
-
-    const paths = pages.map(({ _sys }) => ({
-        params: { page: _sys.filename }
-    }));
+    let paths = pagesResponse?.data?.pageConnection?.edges
+        ?.map(({ node }) => node)
+        ?.map(({ _sys }) => ({
+            params: { page: _sys.filename }
+        }));
+    paths = paths != null ? paths : [];
 
     return { paths, fallback: false };
 }

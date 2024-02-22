@@ -15,18 +15,20 @@ export default {
             type: "string",
             name: "pageType",
             label: "Page Type",
+            required: true,
+            ui: { defaultItem: "none" },
             options: [
                 {
                     value: "none",
                     label: "None"
                 },
                 {
-                    value: "solution",
-                    label: "Solution"
+                    value: "solutions",
+                    label: "Solutions"
                 },
                 {
-                    value: "service",
-                    label: "Service"
+                    value: "services",
+                    label: "Services"
                 },
                 {
                     value: "company",

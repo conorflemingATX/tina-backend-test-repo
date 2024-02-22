@@ -6,6 +6,7 @@ import Page from "../components/Page";
 export default (props) => <Page {...props} />;
 
 export const getStaticProps = async () => {
+    
   const { data, query, variables } = await client.queries.page({
     relativePath: "home.mdx",
   });

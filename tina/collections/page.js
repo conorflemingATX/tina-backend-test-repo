@@ -12,6 +12,29 @@ export default {
   format: "mdx",
     fields: [
         {
+            type: "string",
+            name: "pageType",
+            label: "Page Type",
+            options: [
+                {
+                    value: "none",
+                    label: "None"
+                },
+                {
+                    value: "solution",
+                    label: "Solution"
+                },
+                {
+                    value: "service",
+                    label: "Service"
+                },
+                {
+                    value: "company",
+                    label: "Company"
+                }
+            ]
+        },
+        {
             type: "object",
             list: true,
             name: "blocks",
@@ -23,12 +46,15 @@ export default {
             ]
         }
   ],
-  ui: {
-    router: ({ document }) => {
-      if (document._sys.filename === "home") {
-        return `/`;
-      }
-      return undefined;
-    },
-  },
+    ui: {
+        router: ({ document }) => {
+            if (document._sys.filename === "home") {
+                return `/`;
+            }
+            if (document.pageType == null || document.pageType === "none") {
+                return `/${document._sys.filename}`;
+            }
+            return `/${document.pageType}/${document._sys.filename}`;
+        }
+    }
 };

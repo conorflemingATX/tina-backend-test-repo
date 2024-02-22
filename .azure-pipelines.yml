@@ -25,6 +25,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: Publish Build Artifacts
   inputs:
-    PathtoPublish: 'public'
+    PathtoPublish: 'out'
     ArtifactName: 'website'
     publishLocation: 'Container'

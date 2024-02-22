@@ -1,10 +1,12 @@
 module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/admin',
-        destination: '/admin/index.html',
-      },
-    ]
-  },
+    output: "export",
+    images: { unoptimized: true },
+    async rewrites() {
+        return [
+            {
+                source: '/admin',
+                destination: '/admin/index.html',
+            },
+        ]
+    },
 }

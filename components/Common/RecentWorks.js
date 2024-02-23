@@ -14,22 +14,23 @@ import WorksImage5 from "../../images/works-image/works-image5.jpg"
 // Shape Images
 import Shape2 from "../../images/shape2.svg"
 import Shape4 from "../../images/shape4.svg"
+import Head from "next/head"
 
-const RecentWorks = () => {
+const RecentWorks = ({data}) => {
+  const {heading,text,RecentWorks} = data;
+  const fullServices = Array.isArray(RecentWorks) ? RecentWorks.slice(0,8): null;
   return (
     <>
       <div className="works-area pt-80 pb-50 bg-f7fafd">
         <div className="container">
           <div className="section-title">
-            <h2>Our Recent Works</h2>
+            <h2>{heading}</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             {text}
             </p>
           </div>
         </div>
-
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -57,110 +58,42 @@ const RecentWorks = () => {
           }}
           modules={[Pagination, Autoplay]}
           className="works-slides"
-        >
-          <SwiperSlide className="single-works">
-            <img src={WorksImage1} alt="Works" />
+        > 
 
-            <Link href="/project-details" className="icon">
-              <Icon.Settings />
-            </Link>
-
-            <div className="works-content">
-              <h3>
-                <Link href="/project-details">Incredible infrastructure</Link>
-              </h3>
-              <p>
-                Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                incididunt ut labore dolore magna aliqua.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-works">
-            <img src={WorksImage2} alt="Works" />
-
-            <Link href="/project-details" className="icon">
-              <Icon.Settings />
-            </Link>
-
-            <div className="works-content">
-              <h3>
-                <Link href="/project-details">Email Notifications</Link>
-              </h3>
-              <p>
-                Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                incididunt ut labore dolore magna aliqua.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-works">
-            <img src={WorksImage3} alt="Works" />
-
-            <Link href="/project-details" className="icon">
-              <Icon.Settings />
-            </Link>
-
-            <div className="works-content">
-              <h3>
-                <Link href="/project-details">Best Analytics Audits</Link>
-              </h3>
-              <p>
-                Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                incididunt ut labore dolore magna aliqua.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-works">
-            <img src={WorksImage4} alt="Works" />
-
-            <Link href="/project-details" className="icon">
-              <Icon.Settings />
-            </Link>
-
-            <div className="works-content">
-              <h3>
-                <Link href="/project-details">Simple Dashboard</Link>
-              </h3>
-              <p>
-                Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                incididunt ut labore dolore magna aliqua.
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-works">
-            <img src={WorksImage5} alt="Works" />
-
-            <Link href="/project-details" className="icon">
-              <Icon.Settings />
-            </Link>
-
-            <div className="works-content">
-              <h3>
-                <Link href="/project-details">Information Retrieval</Link>
-              </h3>
-              <p>
-                Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                incididunt ut labore dolore magna aliqua.
-              </p>
-            </div>
-          </SwiperSlide>
+     {fullServices != null
+       ? fullServices.map(({Heading, text, worksimage}, i) => {
+        return (
+          <SwiperSlide key={i + "service"} className="single-works">
+          <img src={worksimage} alt="Works" />
+          {/* <Link href="/project-details" className="icon">
+            <Icon.Settings />
+          </Link> */}
+          <div className="works-content">
+            <h3
+              style={{ color: "white" }}>{Heading}
+            </h3>
+            <p>
+              {text}
+            </p>
+          </div>
+        </SwiperSlide>
+        );
+       })
+      : null }  
         </Swiper>
 
         {/* Shape Images */}
         <div className="shape8 rotateme">
-          <img src={Shape2} alt="shape" />
+          <img {...Shape2} alt="shape" />
         </div>
         <div className="shape2 rotateme">
-          <img src={Shape2} alt="shape" />
+          <img {...Shape2} alt="shape" />
         </div>
         <div className="shape7">
-          <img src={Shape4} alt="shape" />
+          <img {...Shape4} alt="shape" />
         </div>
         <div className="shape4">
-          <img src={Shape4} alt="shape" />
+          <img {...Shape4} alt="shape" />
         </div>
       </div>
     </>

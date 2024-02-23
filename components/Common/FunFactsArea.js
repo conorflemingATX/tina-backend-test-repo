@@ -4,61 +4,47 @@ import Link from 'next/link'
 import MapImg from "../../images/map.png"
 //import CoverPage from "../../images/cover-page.png";
 
-const FunFactsArea = () => {
+const FunFactsArea = ({data}) => {
+  const {heading, text, facts,contactheading,contacttext,contactarea} = data;
+  const fullServices = Array.isArray(facts) ? facts.slice(0,8): null;
   return (
     <>
       <div className="funfacts-area ptb-80">
         <div className="container">
           <div className="section-title">
-            <h2>We always try to understand users expectation</h2>
+            <h2>{heading}</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             {text}
             </p>
           </div>
 
           <div className="row">
-            <div className="col-lg-3 col-md-3 col-6">
-              <div className="funfact">
-                <h3>180K</h3>
-                <p>Downloaded</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-3 col-6">
-              <div className="funfact">
-                <h3>20K</h3>
-                <p>Feedback</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-3 col-6">
-              <div className="funfact">
-                <h3>500+</h3>
-                <p>Workers</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-3 col-6">
-              <div className="funfact">
-                <h3>70+</h3>
-                <p>Contributors</p>
-              </div>
-            </div>
+            {fullServices !=null
+              ? fullServices.map(({numbers, field}, i) => {
+                return (
+               <div key={i + "service"}className="col-lg-3 col-md-3 col-6">
+                  <div className="funfact">
+                    <h3>{numbers}</h3>
+                    <p>{field}</p>
+                  </div>
+                </div>
+                );
+              })
+              : null }
           </div>
 
           <div className="contact-cta-box">
-            <h3>Have Any Questions About Us?</h3>
-            <p>Don't hesitate to contact us</p>
+            <h3>{contactheading}</h3>
+            <p>{contacttext}</p>
 
-            <Link href="/contact" className="btn btn-primary">
-              Contact Us
-            </Link>
+            <a href="/contact" className="btn btn-primary">
+              {contactarea}
+            </a>
           </div>
          
           <div className="map-bg">
-            <img src={MapImg} alt="map" />
+            <img {...MapImg} alt="map" />
           </div>
         </div>
       </div>

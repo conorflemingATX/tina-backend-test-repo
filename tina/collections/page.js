@@ -1,6 +1,12 @@
 import mainBannerBlock from "./blocks/mainBannerBlock";
 import featuresBlock from "./blocks/featuresBlock";
 import servicesAreaBlock from "./blocks/servicesAreaBlock";
+import designAreaBlock from "./blocks/designAreaBlock";
+import ourFeatureBlock from "./blocks/ourFeatureBlock";
+import ourRecentWorksBlock from "./blocks/ourRecentWorksBlock";
+import ourAwesomeTeamBlock from "./blocks/ourAwesomeTeamBlock";
+import funFactsBlocks from "./blocks/funFactsBlocks";
+
 
 /**
  * @type {import('tinacms').Collection}
@@ -44,7 +50,12 @@ export default {
             templates: [
                 mainBannerBlock,
                 featuresBlock,
-                servicesAreaBlock
+                servicesAreaBlock,
+                designAreaBlock,
+                ourFeatureBlock,
+                ourRecentWorksBlock,
+                ourAwesomeTeamBlock,
+                funFactsBlocks
             ]
         }
   ],

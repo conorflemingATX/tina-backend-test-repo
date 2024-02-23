@@ -5,12 +5,15 @@ import Page from "../components/Page";
 
 export default (props) => <Page {...props} />;
 
+// export default function PageIndex(props) {
+//   return <Page {...props} />;
+// }
+
 export const getStaticProps = async () => {
     
   const { data, query, variables } = await client.queries.page({
     relativePath: "home.mdx",
   });
-
   return {
     props: {
       data,

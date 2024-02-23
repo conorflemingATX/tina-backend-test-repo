@@ -4,6 +4,8 @@ import servicesAreaBlock from "./blocks/servicesAreaBlock";
 import designAreaBlock from "./blocks/designAreaBlock";
 import ourFeatureBlock from "./blocks/ourFeatureBlock";
 import ourRecentWorksBlock from "./blocks/ourRecentWorksBlock";
+import ourAwesomeTeamBlock from "./blocks/ourAwesomeTeamBlock";
+import funFactsBlocks from "./blocks/funFactsBlocks";
 
 
 /**
@@ -26,7 +28,9 @@ export default {
                 servicesAreaBlock,
                 designAreaBlock,
                 ourFeatureBlock,
-                ourRecentWorksBlock
+                ourRecentWorksBlock,
+                ourAwesomeTeamBlock,
+                funFactsBlocks
             ]
         }
   ],

@@ -9,17 +9,19 @@ import Team3 from "../../images/team-image/team3.jpg"
 import Team4 from "../../images/team-image/team4.jpg"
 import Team5 from "../../images/team-image/team5.jpg"
 
-const Team = () => {
+const Team = ({data}) => {
+  const{heading,text,ourawesometeam} = data;
+  const fullServices = Array.isArray(ourawesometeam) ? ourawesometeam.slice(0, 8): null;
+  console.log(ourawesometeam)
   return (
     <>
       <div className="team-area ptb-80 bg-f9f6f6">
         <div className="container">
           <div className="section-title">
-            <h2>Our Awesome Team</h2>
+            <h2>{heading}</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {text}
             </p>
           </div>
         </div>
@@ -57,15 +59,18 @@ const Team = () => {
           modules={[Pagination, Autoplay]}
           className="team-slider"
         >
-          <SwiperSlide className="single-team">
+          { fullServices !=null
+          ? fullServices.map(({teammemberimage, nameofmember, roleofmember, icon1, icon2, icon3, icon4, textarea }, i ) => {
+            return ( 
+            <SwiperSlide key={i + "servcie"} className="single-team">
             <div className="team-image">
-              <img src={Team1} alt="Team" />
+              <img src={teammemberimage} alt="Team" />
             </div>
 
             <div className="team-content">
               <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO & Founder</span>
+                <h3>{nameofmember}</h3>
+                <span>{roleofmember}</span>
               </div>
 
               <ul>
@@ -75,7 +80,7 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Icon.Facebook />
+                   <Icon.Facebook />
                   </a>
                 </li>
                 <li>
@@ -84,7 +89,7 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Icon.Twitter />
+                     <Icon.Twitter /> 
                   </a>
                 </li>
                 <li>
@@ -93,7 +98,7 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Icon.Linkedin />
+                  <Icon.Linkedin />
                   </a>
                 </li>
                 <li>
@@ -102,529 +107,19 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Icon.Gitlab />
+                   <Icon.Gitlab />
                   </a>
                 </li>
               </ul>
 
               <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.
+                {textarea}
               </p>
             </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team2} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team3} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team4} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team5} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team1} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO & Founder</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team2} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team3} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team4} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="single-team">
-            <div className="team-image">
-              <img src={Team5} alt="Team" />
-            </div>
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Twitter />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
-
-              <p>
-                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
-                ipsum.{" "}
-              </p>
-            </div>
-          </SwiperSlide>
+          </SwiperSlide> 
+            )
+          })
+          : null }
         </Swiper>
       </div>
     </>

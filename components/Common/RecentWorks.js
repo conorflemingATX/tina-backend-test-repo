@@ -60,7 +60,7 @@ const RecentWorks = ({data}) => {
           className="works-slides"
         > 
 
-           {fullServices != null
+     {fullServices != null
        ? fullServices.map(({Heading, text, worksimage}, i) => {
         return (
           <SwiperSlide key={i + "service"} className="single-works">

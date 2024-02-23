@@ -11,6 +11,7 @@ import RecentWorks from "../components/Common/RecentWorks"
 import Partner from "../components/Common/Partner"
 import BlogPost from "../components/Common/BlogPost"
 import DesignArea from "./ITStartup/DesignArea";
+import Team from "../components/Common/Team"
 
 const { Fragment } = React;
 
@@ -55,6 +56,18 @@ export default ({ page }) => {
                         return (
                             <Fragment key={i + block.__typename}>
                               <RecentWorks data={block} />
+                            </Fragment>
+                       );
+                       case "PageBlocksOurAwesomeTeamBlock":
+                        return (
+                            <Fragment key={i + block.__typename}>
+                              <Team data={block} />
+                            </Fragment>
+                       );
+                       case "PageBlocksFunfactsBlocks":
+                        return (
+                            <Fragment key={i + block.__typename}>
+                              <FunFactsArea data={block} />
                             </Fragment>
                        );
                    };

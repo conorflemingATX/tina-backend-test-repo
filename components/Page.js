@@ -13,7 +13,7 @@ export default function Page({ query, variables, data: pageData }) {
         variables: variables,
         data: pageData,
     });
-
+    
     return (
         <Layout>
             <Navbar />

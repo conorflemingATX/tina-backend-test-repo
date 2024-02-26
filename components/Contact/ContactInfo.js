@@ -1,5 +1,5 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
 const ContactInfo = () => {
   return (
@@ -17,7 +17,7 @@ const ContactInfo = () => {
                   <a href="mailto:YourPartner@nitcoinc.com">
                     YourPartner@nitcoinc.com{" "}
                   </a>
-                  </p>
+                </p>
                 {/*} <p>
                   <a href="mailto:info@spet.com">info@spet.com</a>
                   </p>*/}
@@ -77,7 +77,7 @@ const ContactInfo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ContactInfo
+export default ContactInfo;

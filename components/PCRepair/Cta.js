@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import ManAndWomen from "../../images/man-and-women.png"
-import Circle from "../../images/circle.png"
-import CtaShape from "../../images/cta-shape.png"
+import React from "react";
+import { Link } from "gatsby";
+import ManAndWomen from "../../images/man-and-women.png";
+import Circle from "../../images/circle.png";
+import CtaShape from "../../images/cta-shape.png";
 
 const Cta = () => {
   return (
@@ -42,7 +42,7 @@ const Cta = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Cta
+export default Cta;

@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
-import Shape5 from "../../images/shape5.png"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
+import Shape5 from "../../images/shape5.png";
 
 const PageBanner = ({ pageTitle }) => {
   return (
@@ -46,7 +46,7 @@ const PageBanner = ({ pageTitle }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PageBanner
+export default PageBanner;

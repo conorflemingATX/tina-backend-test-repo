@@ -1,36 +1,36 @@
-import React from "react"
-import Slider from "react-slick"
-import * as Icon from "react-feather"
+import React from "react";
+import Slider from "react-slick";
+import * as Icon from "react-feather";
 
-import ClientImg1 from "../../images/client-image/client1.jpg"
-import ClientImg2 from "../../images/client-image/client2.jpg"
-import ClientImg3 from "../../images/client-image/client3.jpg"
-import ClientImg4 from "../../images/client-image/client4.jpg"
-import ClientImg5 from "../../images/client-image/client5.jpg"
+import ClientImg1 from "../../images/client-image/client1.jpg";
+import ClientImg2 from "../../images/client-image/client2.jpg";
+import ClientImg3 from "../../images/client-image/client3.jpg";
+import ClientImg4 from "../../images/client-image/client4.jpg";
+import ClientImg5 from "../../images/client-image/client5.jpg";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
-const NextArrow = props => {
-  const { onClick } = props
+const NextArrow = (props) => {
+  const { onClick } = props;
   return (
     <button className="next-arrow slick-arrow" onClick={onClick}>
       <Icon.ArrowRight />
     </button>
-  )
-}
+  );
+};
 
-const PrevArrow = props => {
-  const { onClick } = props
+const PrevArrow = (props) => {
+  const { onClick } = props;
   return (
     <button className="prev-arrow slick-arrow" onClick={onClick}>
       <Icon.ArrowLeft />
     </button>
-  )
-}
+  );
+};
 
 class Feedback extends React.Component {
   state = {
@@ -39,13 +39,13 @@ class Feedback extends React.Component {
     oldSlide: 0,
     activeSlide: 0,
     activeSlide2: 0,
-  }
+  };
 
   componentDidMount() {
     this.setState({
       imagesSlider: this.slider1,
       thumbnailsSlider: this.slider2,
-    })
+    });
   }
 
   renderSliderFullContent = () => {
@@ -64,9 +64,9 @@ class Feedback extends React.Component {
             </div>
           </div>
         </div>
-      )
-    })
-  }
+      );
+    });
+  };
 
   renderSliderImages = () => {
     return DEFAULT_PROPS.map(({ name, image }) => {
@@ -78,9 +78,9 @@ class Feedback extends React.Component {
             </div>
           </div>
         </div>
-      )
-    })
-  }
+      );
+    });
+  };
 
   render() {
     const sliderSettings1 = {
@@ -95,7 +95,7 @@ class Feedback extends React.Component {
       arrows: false,
       nextArrow: false,
       prevArrow: false,
-    }
+    };
 
     const sliderSettings2 = {
       speed: 300,
@@ -111,8 +111,8 @@ class Feedback extends React.Component {
       prevArrow: <PrevArrow />,
       beforeChange: (current, next) =>
         this.setState({ oldSlide: current, activeSlide: next }),
-      afterChange: current => this.setState({ activeSlide2: current }),
-    }
+      afterChange: (current) => this.setState({ activeSlide2: current }),
+    };
 
     return (
       <section className="feedback-area ptb-80 bg-f7fafd">
@@ -130,7 +130,7 @@ class Feedback extends React.Component {
             <div className="client-feedback">
               <div>
                 <Slider
-                  ref={slider => (this.slider1 = slider)}
+                  ref={(slider) => (this.slider1 = slider)}
                   {...sliderSettings1}
                 >
                   {this.renderSliderFullContent()}
@@ -141,7 +141,7 @@ class Feedback extends React.Component {
             <div className="client-thumbnails">
               <div>
                 <Slider
-                  ref={slider => (this.slider2 = slider)}
+                  ref={(slider) => (this.slider2 = slider)}
                   {...sliderSettings2}
                 >
                   {this.renderSliderImages()}
@@ -171,7 +171,7 @@ class Feedback extends React.Component {
           <img src={Shape2} alt="shape" />
         </div>
       </section>
-    )
+    );
   }
 }
 
@@ -232,6 +232,6 @@ const DEFAULT_PROPS = [
     content:
       "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
-]
+];
 
-export default Feedback
+export default Feedback;

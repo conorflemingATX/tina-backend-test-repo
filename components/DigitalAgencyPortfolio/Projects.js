@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
-import projectImg1 from "../../images/agency-portfolio-projects/ap-project1.jpg";   
-import projectImg2 from "../../images/agency-portfolio-projects/ap-project2.jpg";   
-import projectImg3 from "../../images/agency-portfolio-projects/ap-project3.jpg";   
-import projectImg4 from "../../images/agency-portfolio-projects/ap-project4.jpg";   
-import projectImg5 from "../../images/agency-portfolio-projects/ap-project6.jpg";   
-import projectImg6 from "../../images/agency-portfolio-projects/ap-project5.jpg";   
-import projectImg7 from "../../images/agency-portfolio-projects/ap-project9.jpg";   
-import projectImg8 from "../../images/agency-portfolio-projects/ap-project8.jpg";   
-import projectImg9 from "../../images/agency-portfolio-projects/ap-project7.jpg";   
-import projectImg10 from "../../images/agency-portfolio-projects/ap-project11.jpg";   
-import projectImg11 from "../../images/agency-portfolio-projects/ap-project10.jpg";   
+import projectImg1 from "../../images/agency-portfolio-projects/ap-project1.jpg";
+import projectImg2 from "../../images/agency-portfolio-projects/ap-project2.jpg";
+import projectImg3 from "../../images/agency-portfolio-projects/ap-project3.jpg";
+import projectImg4 from "../../images/agency-portfolio-projects/ap-project4.jpg";
+import projectImg5 from "../../images/agency-portfolio-projects/ap-project6.jpg";
+import projectImg6 from "../../images/agency-portfolio-projects/ap-project5.jpg";
+import projectImg7 from "../../images/agency-portfolio-projects/ap-project9.jpg";
+import projectImg8 from "../../images/agency-portfolio-projects/ap-project8.jpg";
+import projectImg9 from "../../images/agency-portfolio-projects/ap-project7.jpg";
+import projectImg10 from "../../images/agency-portfolio-projects/ap-project11.jpg";
+import projectImg11 from "../../images/agency-portfolio-projects/ap-project10.jpg";
 
 export default class Projects extends Component {
   render() {
@@ -31,18 +31,15 @@ export default class Projects extends Component {
             </div>
 
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 
-                300: 1, 
-                576: 2, 
-                992: 3 
+              columnsCountBreakPoints={{
+                300: 1,
+                576: 2,
+                992: 3,
               }}
             >
               <Masonry gutter="30px">
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg1}
-                    alt="Partner"
-                  />
+                  <img src={projectImg1} alt="Partner" />
 
                   <div className="content">
                     <span>Business</span>
@@ -53,10 +50,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg2}
-                    alt="Partner"
-                  />
+                  <img src={projectImg2} alt="Partner" />
 
                   <div className="content">
                     <span>Development</span>
@@ -67,10 +61,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg3}
-                    alt="Partner"
-                  />
+                  <img src={projectImg3} alt="Partner" />
 
                   <div className="content">
                     <span>Marketing</span>
@@ -81,10 +72,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg4}
-                    alt="Partner"
-                  />
+                  <img src={projectImg4} alt="Partner" />
 
                   <div className="content">
                     <span>App</span>
@@ -95,10 +83,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg5}
-                    alt="Partner"
-                  />
+                  <img src={projectImg5} alt="Partner" />
 
                   <div className="content">
                     <span>Marketing</span>
@@ -109,10 +94,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg6}
-                    alt="Partner"
-                  />
+                  <img src={projectImg6} alt="Partner" />
 
                   <div className="content">
                     <span>Development</span>
@@ -123,10 +105,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg7}
-                    alt="Partner"
-                  />
+                  <img src={projectImg7} alt="Partner" />
 
                   <div className="content">
                     <span>App</span>
@@ -137,10 +116,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg8}
-                    alt="Partner"
-                  />
+                  <img src={projectImg8} alt="Partner" />
 
                   <div className="content">
                     <span>Writing</span>
@@ -151,10 +127,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg9}
-                    alt="Partner"
-                  />
+                  <img src={projectImg9} alt="Partner" />
 
                   <div className="content">
                     <span>IT</span>
@@ -165,10 +138,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg10}
-                    alt="Partner"
-                  />
+                  <img src={projectImg10} alt="Partner" />
 
                   <div className="content">
                     <span>IT</span>
@@ -179,10 +149,7 @@ export default class Projects extends Component {
                 </div>
 
                 <div className="single-latest-projects mb-0">
-                  <img
-                    src={projectImg11}
-                    alt="Partner"
-                  />
+                  <img src={projectImg11} alt="Partner" />
 
                   <div className="content">
                     <span>Marketing</span>

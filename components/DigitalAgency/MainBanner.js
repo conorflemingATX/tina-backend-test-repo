@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import AgencyBannerImg from "../../images/agency-image/agency-banner-img.jpg"
+import AgencyBannerImg from "../../images/agency-image/agency-banner-img.jpg";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const MainBanner = () => {
   return (
@@ -52,7 +52,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Autoplay } from "swiper"
+import React from "react";
+import { Link } from "gatsby";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
 
 const MainBanner = () => {
   return (
@@ -9,9 +9,9 @@ const MainBanner = () => {
       <Swiper
         navigation={true}
         autoplay={{
-            delay: 6500,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
+          delay: 6500,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
         modules={[Navigation, Autoplay]}
         className="agency-portfolio-home-slides"
@@ -83,7 +83,7 @@ const MainBanner = () => {
         </SwiperSlide>
       </Swiper>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

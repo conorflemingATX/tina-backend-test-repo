@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import APAboutImg1 from "../../images/agency-portfolio-about-image/ap-about-img1.jpg"
-import APAboutImg2 from "../../images/agency-portfolio-about-image/ap-about-img2.jpg"
-import APAboutImg3 from "../../images/agency-portfolio-about-image/ap-about-img3.jpg"
+import APAboutImg1 from "../../images/agency-portfolio-about-image/ap-about-img1.jpg";
+import APAboutImg2 from "../../images/agency-portfolio-about-image/ap-about-img2.jpg";
+import APAboutImg3 from "../../images/agency-portfolio-about-image/ap-about-img3.jpg";
 
 const AboutUsContent = () => {
   return (
@@ -65,7 +65,7 @@ const AboutUsContent = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutUsContent
+export default AboutUsContent;

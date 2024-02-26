@@ -1,34 +1,34 @@
-import React from "react"
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { tinaField } from "tinacms/dist/react";
 
 // Banner Images
-import Man from "../../images/banner-image/man.png"
-import Code from "../../images/banner-image/code.png"
-import Carpet from "../../images/banner-image/carpet.png"
-import Bin from "../../images/banner-image/bin.png"
-import Book from "../../images/banner-image/book.png"
-import Dekstop from "../../images/banner-image/dekstop.png"
-import Dot from "../../images/banner-image/dot.png"
-import FlowerTopBig from "../../images/banner-image/flower-top-big.png"
-import FlowerTop from "../../images/banner-image/flower-top.png"
-import Keyboard from "../../images/banner-image/keyboard.png"
-import Pen from "../../images/banner-image/pen.png"
-import Table from "../../images/banner-image/table.png"
-import TeaCup from "../../images/banner-image/tea-cup.png"
-import HeadPhone from "../../images/banner-image/headphone.png"
-import MainPic from "../../images/banner-image/main-pic.png"
+import Man from "../../images/banner-image/man.png";
+import Code from "../../images/banner-image/code.png";
+import Carpet from "../../images/banner-image/carpet.png";
+import Bin from "../../images/banner-image/bin.png";
+import Book from "../../images/banner-image/book.png";
+import Dekstop from "../../images/banner-image/dekstop.png";
+import Dot from "../../images/banner-image/dot.png";
+import FlowerTopBig from "../../images/banner-image/flower-top-big.png";
+import FlowerTop from "../../images/banner-image/flower-top.png";
+import Keyboard from "../../images/banner-image/keyboard.png";
+import Pen from "../../images/banner-image/pen.png";
+import Table from "../../images/banner-image/table.png";
+import TeaCup from "../../images/banner-image/tea-cup.png";
+import HeadPhone from "../../images/banner-image/headphone.png";
+import MainPic from "../../images/banner-image/main-pic.png";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
-import Shape5 from "../../images/shape5.png"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
+import Shape5 from "../../images/shape5.png";
 
 const MainBanner = ({ data }) => {
-    const { mainHeading, taglineText, ctaButtonText, ctaButtonLink } = data;
+  const { mainHeading, taglineText, ctaButtonText, ctaButtonLink } = data;
   return (
     <>
       <div className="main-banner">
@@ -56,14 +56,14 @@ const MainBanner = ({ data }) => {
                       {taglineText}
                     </p>
 
-                    <Link
-                      href={ctaButtonLink ? ctaButtonLink : ""}>
-                      <a 
-                         className="btn btn-primary"
-                         data-aos="fade-up"
-                         data-aos-delay="300"
-                         data-aos-duration="1200"
-                         data-aos-once="false">{ctaButtonText}</a>
+                    <Link href={ctaButtonLink ? ctaButtonLink : ""}
+                        className="btn btn-primary"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-duration="1200"
+                        data-aos-once="false"
+                      >
+                        {ctaButtonText}
                     </Link>
                   </div>
                 </div>
@@ -193,7 +193,7 @@ const MainBanner = ({ data }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

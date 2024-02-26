@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape2 from "../../images/shape2.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const PricingStyleTwo = () => {
   return (
@@ -160,7 +160,7 @@ const PricingStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PricingStyleTwo
+export default PricingStyleTwo;

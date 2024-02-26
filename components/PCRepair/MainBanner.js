@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import RepairBannerImg from "../../images/repair-banner-image/repair-banner-img.png"
-import RepairShape1 from "../../images/repair-banner-image/repair-shape1.png"
-import RepairShape2 from "../../images/repair-banner-image/repair-shape2.png"
-import RepairShapeCrcle from "../../images/repair-banner-image/repair-shape-circle.png"
+import RepairBannerImg from "../../images/repair-banner-image/repair-banner-img.png";
+import RepairShape1 from "../../images/repair-banner-image/repair-shape1.png";
+import RepairShape2 from "../../images/repair-banner-image/repair-shape2.png";
+import RepairShapeCrcle from "../../images/repair-banner-image/repair-shape-circle.png";
 
 const MainBanner = () => {
   return (
@@ -55,7 +55,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

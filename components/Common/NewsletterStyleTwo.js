@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import NewsletterImg from "../../images/bigdata-analytics/newsletter.jpg"
+import NewsletterImg from "../../images/bigdata-analytics/newsletter.jpg";
 
 const NewsletterStyleTwo = () => {
   return (
@@ -37,7 +37,7 @@ const NewsletterStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default NewsletterStyleTwo
+export default NewsletterStyleTwo;

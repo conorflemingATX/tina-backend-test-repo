@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Author1 from "../../images/author1.jpg"
-import Author2 from "../../images/author2.jpg"
-import Author3 from "../../images/author3.jpg"
+import Author1 from "../../images/author1.jpg";
+import Author2 from "../../images/author2.jpg";
+import Author3 from "../../images/author3.jpg";
 
 const Feedback = () => {
   return (
@@ -76,7 +76,7 @@ const Feedback = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Feedback
+export default Feedback;

@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import { Link } from "gatsby";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
-import BlogImg1 from "../../images/blog-image/blog1.jpg"
-import BlogImg2 from "../../images/blog-image/blog2.jpg"
-import BlogImg3 from "../../images/blog-image/blog3.jpg"
+import BlogImg1 from "../../images/blog-image/blog1.jpg";
+import BlogImg2 from "../../images/blog-image/blog2.jpg";
+import BlogImg3 from "../../images/blog-image/blog3.jpg";
 
 const BlogPostStyleThree = () => {
   return (
@@ -138,7 +138,7 @@ const BlogPostStyleThree = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BlogPostStyleThree
+export default BlogPostStyleThree;

@@ -1,20 +1,20 @@
-import React from "react"
-import * as Icon from "react-feather"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import * as Icon from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
 // Client Images
-import Client1 from "../../images/client-image/client1.jpg"
-import Client2 from "../../images/client-image/client2.jpg"
-import Client3 from "../../images/client-image/client3.jpg"
+import Client1 from "../../images/client-image/client1.jpg";
+import Client2 from "../../images/client-image/client2.jpg";
+import Client3 from "../../images/client-image/client3.jpg";
 
 // Shape Images
-import AgencyUser1 from "../../images/agency-image/agency-user1.png"
-import AgencyUser2 from "../../images/agency-image/agency-user2.png"
-import AgencyUser3 from "../../images/agency-image/agency-user3.png"
-import AgencyUser4 from "../../images/agency-image/agency-user4.png"
-import AgencyUser5 from "../../images/agency-image/agency-user5.png"
-import AgencyUser6 from "../../images/agency-image/agency-user6.png"
+import AgencyUser1 from "../../images/agency-image/agency-user1.png";
+import AgencyUser2 from "../../images/agency-image/agency-user2.png";
+import AgencyUser3 from "../../images/agency-image/agency-user3.png";
+import AgencyUser4 from "../../images/agency-image/agency-user4.png";
+import AgencyUser5 from "../../images/agency-image/agency-user5.png";
+import AgencyUser6 from "../../images/agency-image/agency-user6.png";
 
 const FeedbackStyleThree = () => {
   return (
@@ -145,7 +145,7 @@ const FeedbackStyleThree = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default FeedbackStyleThree
+export default FeedbackStyleThree;

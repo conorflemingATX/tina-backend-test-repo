@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import Icon1 from "../../images/icon1.png"
-import Icon2 from "../../images/icon2.png"
-import Icon3 from "../../images/icon3.png"
+import Icon1 from "../../images/icon1.png";
+import Icon2 from "../../images/icon2.png";
+import Icon3 from "../../images/icon3.png";
 
 const WhyWeAreBest = () => {
   return (
@@ -72,7 +72,7 @@ const WhyWeAreBest = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WhyWeAreBest
+export default WhyWeAreBest;

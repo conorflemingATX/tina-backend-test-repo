@@ -1,18 +1,19 @@
-import React from "react"
-import * as Icon from "react-feather"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import * as Icon from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
-import Team1 from "../../images/team-image/team1.jpg"
-import Team2 from "../../images/team-image/team2.jpg"
-import Team3 from "../../images/team-image/team3.jpg"
-import Team4 from "../../images/team-image/team4.jpg"
-import Team5 from "../../images/team-image/team5.jpg"
+import Team1 from "../../images/team-image/team1.jpg";
+import Team2 from "../../images/team-image/team2.jpg";
+import Team3 from "../../images/team-image/team3.jpg";
+import Team4 from "../../images/team-image/team4.jpg";
+import Team5 from "../../images/team-image/team5.jpg";
 
-const Team = ({data}) => {
-  const{heading,text,ourawesometeam} = data;
-  const fullServices = Array.isArray(ourawesometeam) ? ourawesometeam.slice(0, 8): null;
-  console.log(ourawesometeam)
+const Team = ({ data }) => {
+  const { heading, text, ourawesometeam } = data;
+  const fullServices = Array.isArray(ourawesometeam)
+    ? ourawesometeam.slice(0, 8)
+    : null;
   return (
     <>
       <div className="team-area ptb-80 bg-f9f6f6">
@@ -20,9 +21,7 @@ const Team = ({data}) => {
           <div className="section-title">
             <h2>{heading}</h2>
             <div className="bar"></div>
-            <p>
-              {text}
-            </p>
+            <p>{text}</p>
           </div>
         </div>
 
@@ -59,71 +58,83 @@ const Team = ({data}) => {
           modules={[Pagination, Autoplay]}
           className="team-slider"
         >
-          { fullServices !=null
-          ? fullServices.map(({teammemberimage, nameofmember, roleofmember, icon1, icon2, icon3, icon4, textarea }, i ) => {
-            return ( 
-            <SwiperSlide key={i + "servcie"} className="single-team">
-            <div className="team-image">
-              <img src={teammemberimage} alt="Team" />
-            </div>
+          {fullServices != null
+            ? fullServices.map(
+                (
+                  {
+                    teammemberimage,
+                    nameofmember,
+                    roleofmember,
+                    icon1,
+                    icon2,
+                    icon3,
+                    icon4,
+                    textarea,
+                  },
+                  i
+                ) => {
+                  return (
+                    <SwiperSlide key={i + "servcie"} className="single-team">
+                      <div className="team-image">
+                        <img src={teammemberimage} alt="Team" />
+                      </div>
 
-            <div className="team-content">
-              <div className="team-info">
-                <h3>{nameofmember}</h3>
-                <span>{roleofmember}</span>
-              </div>
+                      <div className="team-content">
+                        <div className="team-info">
+                          <h3>{nameofmember}</h3>
+                          <span>{roleofmember}</span>
+                        </div>
 
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                   <Icon.Facebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                     <Icon.Twitter /> 
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                  <Icon.Linkedin />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                   <Icon.Gitlab />
-                  </a>
-                </li>
-              </ul>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon.Facebook />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://twitter.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon.Twitter />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon.Linkedin />
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://gitlab.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <Icon.Gitlab />
+                            </a>
+                          </li>
+                        </ul>
 
-              <p>
-                {textarea}
-              </p>
-            </div>
-          </SwiperSlide> 
-            )
-          })
-          : null }
+                        <p>{textarea}</p>
+                      </div>
+                    </SwiperSlide>
+                  );
+                }
+              )
+            : null}
         </Swiper>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

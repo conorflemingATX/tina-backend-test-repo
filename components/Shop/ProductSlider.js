@@ -1,12 +1,12 @@
-import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation } from "swiper"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 
-import ShopImage1 from "../../images/shop-image/shop-image1.jpg"
-import ShopImage2 from "../../images/shop-image/shop-image2.jpg"
-import ShopImage3 from "../../images/shop-image/shop-image3.jpg"
-import ShopImage4 from "../../images/shop-image/shop-image4.jpg"
-import ShopImage5 from "../../images/shop-image/shop-image5.jpg"
+import ShopImage1 from "../../images/shop-image/shop-image1.jpg";
+import ShopImage2 from "../../images/shop-image/shop-image2.jpg";
+import ShopImage3 from "../../images/shop-image/shop-image3.jpg";
+import ShopImage4 from "../../images/shop-image/shop-image4.jpg";
+import ShopImage5 from "../../images/shop-image/shop-image5.jpg";
 
 const ProductSlider = () => {
   return (
@@ -37,7 +37,7 @@ const ProductSlider = () => {
         </SwiperSlide>
       </Swiper>
     </>
-  )
-}
+  );
+};
 
-export default ProductSlider
+export default ProductSlider;

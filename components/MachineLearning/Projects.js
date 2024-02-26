@@ -1,19 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import { Link } from "gatsby";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
-import ProjectsImg1 from "../../images/projects-img1.jpg"
-import ProjectsImg2 from "../../images/projects-img2.jpg"
-import ProjectsImg3 from "../../images/projects-img3.jpg"
-import ProjectsImg4 from "../../images/projects-img4.jpg"
-import ProjectsImg5 from "../../images/projects-img5.jpg"
+import ProjectsImg1 from "../../images/projects-img1.jpg";
+import ProjectsImg2 from "../../images/projects-img2.jpg";
+import ProjectsImg3 from "../../images/projects-img3.jpg";
+import ProjectsImg4 from "../../images/projects-img4.jpg";
+import ProjectsImg5 from "../../images/projects-img5.jpg";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const Projects = () => {
   return (
@@ -127,7 +127,7 @@ const Projects = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

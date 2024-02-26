@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import AuthorImg from "../../images/author2.jpg"
+import AuthorImg from "../../images/author2.jpg";
 
 const AuthorSidebar = () => {
   return (
@@ -168,7 +168,7 @@ const AuthorSidebar = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AuthorSidebar
+export default AuthorSidebar;

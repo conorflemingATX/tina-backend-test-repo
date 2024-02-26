@@ -1,13 +1,13 @@
-import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
-import APPartner1 from "../../images/agency-portfolio-partner-image/ap-partner1.png"
-import APPartner2 from "../../images/agency-portfolio-partner-image/ap-partner2.png"
-import APPartner3 from "../../images/agency-portfolio-partner-image/ap-partner3.png"
-import APPartner4 from "../../images/agency-portfolio-partner-image/ap-partner4.png"
-import APPartner5 from "../../images/agency-portfolio-partner-image/ap-partner5.png"
-import APPartner6 from "../../images/agency-portfolio-partner-image/ap-partner6.png"
+import APPartner1 from "../../images/agency-portfolio-partner-image/ap-partner1.png";
+import APPartner2 from "../../images/agency-portfolio-partner-image/ap-partner2.png";
+import APPartner3 from "../../images/agency-portfolio-partner-image/ap-partner3.png";
+import APPartner4 from "../../images/agency-portfolio-partner-image/ap-partner4.png";
+import APPartner5 from "../../images/agency-portfolio-partner-image/ap-partner5.png";
+import APPartner6 from "../../images/agency-portfolio-partner-image/ap-partner6.png";
 
 const Partner = () => {
   return (
@@ -61,7 +61,7 @@ const Partner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Partner
+export default Partner;

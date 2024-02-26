@@ -1,10 +1,10 @@
-import React from "react"
-import Link from 'next/link'
-import * as Icon from "react-feather"
+import React from "react";
+import Link from "next/link";
+import * as Icon from "react-feather";
 
-import BlogImg1 from "../../images/blog-image/blog1.jpg"
-import BlogImg2 from "../../images/blog-image/blog2.jpg"
-import BlogImg3 from "../../images/blog-image/blog3.jpg"
+import BlogImg1 from "../../images/blog-image/blog1.jpg";
+import BlogImg2 from "../../images/blog-image/blog2.jpg";
+import BlogImg3 from "../../images/blog-image/blog3.jpg";
 
 const BlogPost = () => {
   return (
@@ -57,7 +57,9 @@ const BlogPost = () => {
                   </p>
 
                   <Link href="/blog-details" className="read-more-btn">
-                    <>Read More <Icon.ArrowRight /></>
+                    <>
+                      Read More <Icon.ArrowRight />
+                    </>
                   </Link>
                 </div>
               </div>
@@ -99,7 +101,9 @@ const BlogPost = () => {
                   </p>
 
                   <Link href="/blog-details" className="read-more-btn">
-                    <>Read More <Icon.ArrowRight /></>
+                    <>
+                      Read More <Icon.ArrowRight />
+                    </>
                   </Link>
                 </div>
               </div>
@@ -141,7 +145,9 @@ const BlogPost = () => {
                   </p>
 
                   <Link href="/blog-details" className="read-more-btn">
-                    <>Read More <Icon.ArrowRight /></>
+                    <>
+                      Read More <Icon.ArrowRight />
+                    </>
                   </Link>
                 </div>
               </div>
@@ -150,7 +156,7 @@ const BlogPost = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BlogPost
+export default BlogPost;

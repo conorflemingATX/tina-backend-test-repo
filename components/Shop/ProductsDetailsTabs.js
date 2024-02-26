@@ -1,5 +1,5 @@
-import React from "react"
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const ProductsDetailsTabs = () => {
   return (
@@ -122,7 +122,7 @@ const ProductsDetailsTabs = () => {
         </Tabs>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductsDetailsTabs
+export default ProductsDetailsTabs;

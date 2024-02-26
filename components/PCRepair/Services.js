@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
 const Services = () => {
   return (
@@ -128,7 +128,7 @@ const Services = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

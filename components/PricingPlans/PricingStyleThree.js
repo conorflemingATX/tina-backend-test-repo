@@ -1,24 +1,24 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
-import AgencyShape1 from "../../images/agency-image/agency-shape1.png"
+import React, { Component } from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
+import AgencyShape1 from "../../images/agency-image/agency-shape1.png";
 
 class PricingStyleThree extends Component {
   openTabSection = (evt, tabNmae) => {
-    let i, tabcontent, tablinks
-    tabcontent = document.getElementsByClassName("tabs_item")
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabs_item");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none"
+      tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByTagName("li")
+    tablinks = document.getElementsByTagName("li");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("current", "")
+      tablinks[i].className = tablinks[i].className.replace("current", "");
     }
 
-    document.getElementById(tabNmae).style.display = "block"
-    evt.currentTarget.className += "current"
-  }
+    document.getElementById(tabNmae).style.display = "block";
+    evt.currentTarget.className += "current";
+  };
 
   render() {
     return (
@@ -39,14 +39,14 @@ class PricingStyleThree extends Component {
               <ul className="tabs">
                 <li
                   className="current"
-                  onClick={e => this.openTabSection(e, "tab1")}
+                  onClick={(e) => this.openTabSection(e, "tab1")}
                   aria-hidden="true"
                 >
                   Monthly Plan
                 </li>
 
                 <li
-                  onClick={e => this.openTabSection(e, "tab2")}
+                  onClick={(e) => this.openTabSection(e, "tab2")}
                   aria-hidden="true"
                 >
                   Yearly Plan <i data-feather="calendar"></i>
@@ -341,8 +341,8 @@ class PricingStyleThree extends Component {
           </div>
         </div>
       </>
-    )
+    );
   }
 }
 
-export default PricingStyleThree
+export default PricingStyleThree;

@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import FreeTrialImg from "../../images/free-trial-img.png"
+import FreeTrialImg from "../../images/free-trial-img.png";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape2 from "../../images/shape2.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const Newsletter = () => {
   return (
@@ -55,7 +55,7 @@ const Newsletter = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;

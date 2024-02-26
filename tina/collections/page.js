@@ -19,6 +19,12 @@ export default {
     fields: [
         {
             type: "string",
+            name: "slug",
+            label: "Page Slug",
+            required: true
+        },
+        {
+            type: "string",
             name: "pageType",
             label: "Page Type",
             required: true,
@@ -58,16 +64,32 @@ export default {
                 funFactsBlocks
             ]
         }
-  ],
+    ],
+    // Change filename to include pageType, then update the router function to split filename based on pageType.
     ui: {
+        filename: {
+            readonly: true,
+            slugify: ({ pageType, slug }) => {
+                console.log(pageType, slug)
+                return `${pageType}__${slug}`;
+            }
+        },
+        // PageType is not in document, must include this information within filename.
         router: ({ document }) => {
-            if (document._sys.filename === "home") {
+            console.log(document);
+            const isHomePage = document._sys.filename === "none__home"
+              || document._sys.filename === "home";
+            if (isHomePage) {
                 return `/`;
             }
-            if (document.pageType == null || document.pageType === "none") {
-                return `/${document._sys.filename}`;
-            }
-            return `/${document.pageType}/${document._sys.filename}`;
+            const splitFilename = document._sys.filename.split("__");
+            if (splitFilename.length === 1)
+                return `/${splitFilename[0]}`;
+            if (splitFilename.length === 2 && splitFilename[0] === "none")
+                return `/${splitFilename[1]}`;
+            if (splitFilename.length === 2)
+                return `/${splitFilename[0]}/${splitFilename[1]}`;
+            throw new Error("Tina Router: Page url could not be correctly parsed..");
         }
     }
 };

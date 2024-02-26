@@ -1,13 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import AgencyAboutImg from "../../images/agency-image/agency-about-img.jpg"
+import AgencyAboutImg from "../../images/agency-image/agency-about-img.jpg";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
-import Shape5 from "../../images/agency-image/agency-shape2.png"
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
+import Shape5 from "../../images/agency-image/agency-shape2.png";
 
 const AboutUsContent = () => {
   return (
@@ -67,7 +67,7 @@ const AboutUsContent = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutUsContent
+export default AboutUsContent;

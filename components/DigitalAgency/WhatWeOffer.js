@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import AgencyIconBG from "../../images/agency-image/agency-icon-bg.png"
-import AgencyShape1 from "../../images/agency-image/agency-shape1.png"
+import AgencyIconBG from "../../images/agency-image/agency-icon-bg.png";
+import AgencyShape1 from "../../images/agency-image/agency-shape1.png";
 
 const WhatWeOffer = () => {
   return (
@@ -116,7 +116,7 @@ const WhatWeOffer = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WhatWeOffer
+export default WhatWeOffer;

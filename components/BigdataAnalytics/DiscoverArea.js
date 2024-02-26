@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import DiscoverImg1 from "../../images/bigdata-analytics/discover-img1.png"
-import DiscoverImg2 from "../../images/bigdata-analytics/discover-img2.jpg"
-import AnalyticsShape1 from "../../images/bigdata-analytics/analytics-shape1.png"
+import DiscoverImg1 from "../../images/bigdata-analytics/discover-img1.png";
+import DiscoverImg2 from "../../images/bigdata-analytics/discover-img2.jpg";
+import AnalyticsShape1 from "../../images/bigdata-analytics/analytics-shape1.png";
 
 const DiscoverArea = () => {
   return (
@@ -48,7 +48,7 @@ const DiscoverArea = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DiscoverArea
+export default DiscoverArea;

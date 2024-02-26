@@ -1,25 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 // ML Banner Images
-import One from "../../images/ml-banner-image/one.png"
-import Two from "../../images/ml-banner-image/two.png"
-import Three from "../../images/ml-banner-image/three.png"
-import Four from "../../images/ml-banner-image/four.png"
-import Five from "../../images/ml-banner-image/five.png"
-import Six from "../../images/ml-banner-image/six.png"
-import Seven from "../../images/ml-banner-image/seven.png"
-import Eight from "../../images/ml-banner-image/eight.png"
-import Nine from "../../images/ml-banner-image/nine.png"
-import Ten from "../../images/ml-banner-image/ten.png"
-import Eleven from "../../images/ml-banner-image/eleven.png"
-import MLMainPic from "../../images/ml-banner-image/ml-main-pic.png"
+import One from "../../images/ml-banner-image/one.png";
+import Two from "../../images/ml-banner-image/two.png";
+import Three from "../../images/ml-banner-image/three.png";
+import Four from "../../images/ml-banner-image/four.png";
+import Five from "../../images/ml-banner-image/five.png";
+import Six from "../../images/ml-banner-image/six.png";
+import Seven from "../../images/ml-banner-image/seven.png";
+import Eight from "../../images/ml-banner-image/eight.png";
+import Nine from "../../images/ml-banner-image/nine.png";
+import Ten from "../../images/ml-banner-image/ten.png";
+import Eleven from "../../images/ml-banner-image/eleven.png";
+import MLMainPic from "../../images/ml-banner-image/ml-main-pic.png";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const MainBanner = () => {
   return (
@@ -161,7 +161,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import MapImg from "../../images/map.png"
+import MapImg from "../../images/map.png";
 
 const DigitalAgencyFunFacts = () => {
   return (
@@ -62,7 +62,7 @@ const DigitalAgencyFunFacts = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DigitalAgencyFunFacts
+export default DigitalAgencyFunFacts;

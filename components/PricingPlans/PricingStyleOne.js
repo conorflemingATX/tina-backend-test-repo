@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 // Shape Images
-import Shape1 from "../../images/shape2.svg"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape4.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape2.svg";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape4.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const PricingStyleOne = () => {
   return (
@@ -162,7 +162,7 @@ const PricingStyleOne = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PricingStyleOne
+export default PricingStyleOne;

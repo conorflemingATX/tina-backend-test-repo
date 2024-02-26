@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import IOTFeatureImage1 from "../../images/iot-features-image/iot-feature-image1.png"
-import IOTFeatureImage2 from "../../images/iot-features-image/iot-feature-image2.png"
+import IOTFeatureImage1 from "../../images/iot-features-image/iot-feature-image1.png";
+import IOTFeatureImage2 from "../../images/iot-features-image/iot-feature-image2.png";
 
 const Features = () => {
   return (
@@ -75,7 +75,7 @@ const Features = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

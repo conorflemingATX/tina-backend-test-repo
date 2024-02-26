@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
 // Blog Post Images
-import BlogImg1 from "../../images/blog-image/blog1.jpg"
-import BlogImg2 from "../../images/blog-image/blog2.jpg"
-import BlogImg3 from "../../images/blog-image/blog3.jpg"
+import BlogImg1 from "../../images/blog-image/blog1.jpg";
+import BlogImg2 from "../../images/blog-image/blog2.jpg";
+import BlogImg3 from "../../images/blog-image/blog3.jpg";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const BlogPostStyleTwo = () => {
   return (
@@ -137,7 +137,7 @@ const BlogPostStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BlogPostStyleTwo
+export default BlogPostStyleTwo;

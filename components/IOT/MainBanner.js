@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import IOTMainImg1 from "../../images/iot-banner-image/iot-main-img1.png"
-import IOTShape1 from "../../images/iot-banner-image/iot-shape1.png"
+import IOTMainImg1 from "../../images/iot-banner-image/iot-main-img1.png";
+import IOTShape1 from "../../images/iot-banner-image/iot-shape1.png";
 
 const MainBanner = () => {
   return (
@@ -67,7 +67,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

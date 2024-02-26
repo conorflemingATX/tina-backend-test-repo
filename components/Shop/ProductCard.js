@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import ShopImage1 from "../../images/shop-image/shop-image1.jpg"
-import ShopImage2 from "../../images/shop-image/shop-image2.jpg"
-import ShopImage3 from "../../images/shop-image/shop-image3.jpg"
-import ShopImage4 from "../../images/shop-image/shop-image4.jpg"
-import ShopImage5 from "../../images/shop-image/shop-image5.jpg"
-import ShopImage6 from "../../images/shop-image/shop-image6.jpg"
-import ShopImage7 from "../../images/shop-image/shop-image7.jpg"
-import ShopImage8 from "../../images/shop-image/shop-image8.jpg"
+import ShopImage1 from "../../images/shop-image/shop-image1.jpg";
+import ShopImage2 from "../../images/shop-image/shop-image2.jpg";
+import ShopImage3 from "../../images/shop-image/shop-image3.jpg";
+import ShopImage4 from "../../images/shop-image/shop-image4.jpg";
+import ShopImage5 from "../../images/shop-image/shop-image5.jpg";
+import ShopImage6 from "../../images/shop-image/shop-image6.jpg";
+import ShopImage7 from "../../images/shop-image/shop-image7.jpg";
+import ShopImage8 from "../../images/shop-image/shop-image8.jpg";
 
 const ProductCard = () => {
   return (
@@ -516,7 +516,7 @@ const ProductCard = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;

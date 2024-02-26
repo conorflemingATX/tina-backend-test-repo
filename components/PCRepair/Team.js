@@ -1,10 +1,10 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
-import RepairTeam1 from "../../images/repair-team-image/repair-team1.jpg"
-import RepairTeam2 from "../../images/repair-team-image/repair-team2.jpg"
-import RepairTeam3 from "../../images/repair-team-image/repair-team3.jpg"
-import RepairTeam4 from "../../images/repair-team-image/repair-team4.jpg"
+import RepairTeam1 from "../../images/repair-team-image/repair-team1.jpg";
+import RepairTeam2 from "../../images/repair-team-image/repair-team2.jpg";
+import RepairTeam3 from "../../images/repair-team-image/repair-team3.jpg";
+import RepairTeam4 from "../../images/repair-team-image/repair-team4.jpg";
 
 const Team = () => {
   return (
@@ -260,7 +260,7 @@ const Team = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

@@ -1,14 +1,14 @@
-import React from "react"
-import Link from 'next/link'
-import * as Icon from "react-feather"
+import React from "react";
+import Link from "next/link";
+import * as Icon from "react-feather";
 
-import Logo from "../../images/nitco-logo1.png"
-import MapImg from "../../images/map.png"
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
+import Logo from "../../images/nitco-logo1.png";
+import MapImg from "../../images/map.png";
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="footer-area bg-f7fafd">
@@ -28,7 +28,13 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                NITCO Inc. is a technology services company that accelerates digital automation with Artificial Intelligence, Machine Learning, Natural Language Processing and Robotic Process Automation. In addition, the company has highly skilled staff serving our clients in Integration Technologies, Data Analytics, Cloud Integration Services and various IT Consulting services.
+                  NITCO Inc. is a technology services company that accelerates
+                  digital automation with Artificial Intelligence, Machine
+                  Learning, Natural Language Processing and Robotic Process
+                  Automation. In addition, the company has highly skilled staff
+                  serving our clients in Integration Technologies, Data
+                  Analytics, Cloud Integration Services and various IT
+                  Consulting services.
                 </p>
               </div>
             </div>
@@ -44,13 +50,19 @@ const Footer = () => {
                 <h3>Company</h3>
                 <ul className="list">
                   <li>
-                    <a href="https://www.nitcoinc.com/company/about/">About Us</a>
+                    <a href="https://www.nitcoinc.com/company/about/">
+                      About Us
+                    </a>
                   </li>
                   <li>
-                    <Link href="https://www.nitcoinc.com/company/careers/">Careers</Link>
+                    <Link href="https://www.nitcoinc.com/company/careers/">
+                      Careers
+                    </Link>
                   </li>
                   <li>
-                    <Link href="https://www.nitcoinc.com/company/our-team/">Our Team</Link>
+                    <Link href="https://www.nitcoinc.com/company/our-team/">
+                      Our Team
+                    </Link>
                   </li>
                   <li>
                     <Link href="/pricing">Our Pricing</Link>
@@ -104,17 +116,31 @@ const Footer = () => {
                 <ul className="footer-contact-info">
                   <li>
                     <Icon.MapPin />
-                    <a href="https://www.google.com/maps/place/Nitco+Inc/@29.7750387,-95.7836527,15z/data=!4m5!3m4!1s0x0:0x179870ae18746b95!8m2!3d29.7750387!4d-95.7836527?shorturl=1" target="_blank" rel="noopener nofollow noreferrer">440 Cobia Dr., Suite 1701<br/>Katy, Texas 77494</a>
+                    <a
+                      href="https://www.google.com/maps/place/Nitco+Inc/@29.7750387,-95.7836527,15z/data=!4m5!3m4!1s0x0:0x179870ae18746b95!8m2!3d29.7750387!4d-95.7836527?shorturl=1"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                    >
+                      440 Cobia Dr., Suite 1701
+                      <br />
+                      Katy, Texas 77494
+                    </a>
                   </li>
                   <li>
                     <Icon.Mail />
-                    Email: <a href="mailto:YourPartner@nitcoinc.com">YourPartner@nitcoinc.com</a>
+                    Email:{" "}
+                    <a href="mailto:YourPartner@nitcoinc.com">
+                      YourPartner@nitcoinc.com
+                    </a>
                   </li>
                   <li>
                     <Icon.PhoneCall />
-                    US Ohio : <a href="tel:281-503-7002">281-503-7002</a><br/>
-                   Malaysia : <a href="tel:03-2276-3999">03-2276-3999</a><br/>
-                   India : <a href="tel:040-29881990">040-29881990</a><br/>
+                    US Ohio : <a href="tel:281-503-7002">281-503-7002</a>
+                    <br />
+                    Malaysia : <a href="tel:03-2276-3999">03-2276-3999</a>
+                    <br />
+                    India : <a href="tel:040-29881990">040-29881990</a>
+                    <br />
                   </li>
                 </ul>
 
@@ -166,9 +192,23 @@ const Footer = () => {
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
                 <p>
-                  Copyright &copy; {currentYear} Nitco, Inc. All Rights Reserved.</p>
-                  <p><a className="Footer-module--link--OttrY" href="https://www.nitcoinc.com/privacy-policy">Privacy Policy</a> |&nbsp;   
-                  <a className="Footer-module--link--OttrY" href="https://www.nitcoinc.com/cookie-policy">Cookie Policy</a>
+                  Copyright &copy; {currentYear} Nitco, Inc. All Rights
+                  Reserved.
+                </p>
+                <p>
+                  <a
+                    className="Footer-module--link--OttrY"
+                    href="https://www.nitcoinc.com/privacy-policy"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  |&nbsp;
+                  <a
+                    className="Footer-module--link--OttrY"
+                    href="https://www.nitcoinc.com/cookie-policy"
+                  >
+                    Cookie Policy
+                  </a>
                 </p>
               </div>
             </div>
@@ -186,7 +226,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

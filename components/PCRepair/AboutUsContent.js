@@ -1,11 +1,11 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
-import About1 from "../../images/about1.jpg"
-import About2 from "../../images/about2.jpg"
-import About3 from "../../images/about3.jpg"
-import AboutShape1 from "../../images/about-shape1.png"
-import AboutShape2 from "../../images/about-shape2.png"
+import About1 from "../../images/about1.jpg";
+import About2 from "../../images/about2.jpg";
+import About3 from "../../images/about3.jpg";
+import AboutShape1 from "../../images/about-shape1.png";
+import AboutShape2 from "../../images/about-shape2.png";
 
 const AboutUsContent = () => {
   return (
@@ -86,7 +86,7 @@ const AboutUsContent = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutUsContent
+export default AboutUsContent;

@@ -1,24 +1,24 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 // Hosting Images
-import HostingShape1 from "../../images/hosting-banner-image/hosting-shape1.png"
-import HostingShape2 from "../../images/hosting-banner-image/hosting-shape2.png"
-import HostingShape3 from "../../images/hosting-banner-image/hosting-shape3.png"
-import HostingShape4 from "../../images/hosting-banner-image/hosting-shape4.png"
-import HostingShape5 from "../../images/hosting-banner-image/hosting-shape5.png"
-import HostingShape6 from "../../images/hosting-banner-image/hosting-shape6.png"
-import HostingShape7 from "../../images/hosting-banner-image/hosting-shape7.png"
-import HostingShape8 from "../../images/hosting-banner-image/hosting-shape8.png"
-import HostingShape9 from "../../images/hosting-banner-image/hosting-shape9.png"
-import HostingStaticMain from "../../images/hosting-banner-image/hosting-static-main.png"
+import HostingShape1 from "../../images/hosting-banner-image/hosting-shape1.png";
+import HostingShape2 from "../../images/hosting-banner-image/hosting-shape2.png";
+import HostingShape3 from "../../images/hosting-banner-image/hosting-shape3.png";
+import HostingShape4 from "../../images/hosting-banner-image/hosting-shape4.png";
+import HostingShape5 from "../../images/hosting-banner-image/hosting-shape5.png";
+import HostingShape6 from "../../images/hosting-banner-image/hosting-shape6.png";
+import HostingShape7 from "../../images/hosting-banner-image/hosting-shape7.png";
+import HostingShape8 from "../../images/hosting-banner-image/hosting-shape8.png";
+import HostingShape9 from "../../images/hosting-banner-image/hosting-shape9.png";
+import HostingStaticMain from "../../images/hosting-banner-image/hosting-static-main.png";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
-import Shape5 from "../../images/shape5.png"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
+import Shape5 from "../../images/shape5.png";
 
 const MainBanner = () => {
   return (
@@ -167,7 +167,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

@@ -1,16 +1,16 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
 // Cloud Hosting Services Images
 
-import CercleShape from "../../images/services-right-image/cercle-shape1.png"
+import CercleShape from "../../images/services-right-image/cercle-shape1.png";
 
 // import CercleShape from "../../images/services-left-image/cercle-shape-edited.png"
 
-import ServiceRightMainPic from "../../images/services-right-image/service-right-main-pic.png"
+import ServiceRightMainPic from "../../images/services-right-image/service-right-main-pic.png";
 
 // Design & Development Images
-import ServiceLeftMainPic from "../../images/services-left-image/service-left-main-pic.png"
+import ServiceLeftMainPic from "../../images/services-left-image/service-left-main-pic.png";
 
 const SingleFeatures = () => {
   return (
@@ -181,7 +181,7 @@ const SingleFeatures = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SingleFeatures
+export default SingleFeatures;

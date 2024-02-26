@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
 // Services Icon
-import Icon1 from "../../images/bigdata-analytics/icon1.png"
-import Icon2 from "../../images/bigdata-analytics/icon2.png"
-import Icon3 from "../../images/bigdata-analytics/icon3.png"
-import Icon4 from "../../images/bigdata-analytics/icon4.png"
-import Icon5 from "../../images/bigdata-analytics/icon5.png"
-import Icon6 from "../../images/bigdata-analytics/icon6.png"
-import Rectangle from "../../images/bigdata-analytics/rectangle.png"
+import Icon1 from "../../images/bigdata-analytics/icon1.png";
+import Icon2 from "../../images/bigdata-analytics/icon2.png";
+import Icon3 from "../../images/bigdata-analytics/icon3.png";
+import Icon4 from "../../images/bigdata-analytics/icon4.png";
+import Icon5 from "../../images/bigdata-analytics/icon5.png";
+import Icon6 from "../../images/bigdata-analytics/icon6.png";
+import Rectangle from "../../images/bigdata-analytics/rectangle.png";
 
 const Services = () => {
   return (
@@ -167,7 +167,7 @@ const Services = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

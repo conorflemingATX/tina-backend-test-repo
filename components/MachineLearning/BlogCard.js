@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import BlogImg9 from "../../images/blog-image/blog9.jpg"
-import BlogImg10 from "../../images/blog-image/blog10.jpg"
-import BlogImg11 from "../../images/blog-image/blog11.jpg"
+import BlogImg9 from "../../images/blog-image/blog9.jpg";
+import BlogImg10 from "../../images/blog-image/blog10.jpg";
+import BlogImg11 from "../../images/blog-image/blog11.jpg";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const BlogCard = () => {
   return (
@@ -155,7 +155,7 @@ const BlogCard = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

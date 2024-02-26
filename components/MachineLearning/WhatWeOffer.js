@@ -1,17 +1,17 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import Icon4 from "../../images/icon4.png"
-import Icon5 from "../../images/icon5.png"
-import Icon6 from "../../images/icon6.png"
-import Icon7 from "../../images/icon7.png"
+import Icon4 from "../../images/icon4.png";
+import Icon5 from "../../images/icon5.png";
+import Icon6 from "../../images/icon6.png";
+import Icon7 from "../../images/icon7.png";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const WhatWeOffer = () => {
   return (
@@ -128,7 +128,7 @@ const WhatWeOffer = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WhatWeOffer
+export default WhatWeOffer;

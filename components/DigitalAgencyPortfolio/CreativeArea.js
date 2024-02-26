@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const CreativeArea = () => {
   return (
@@ -29,7 +29,7 @@ const CreativeArea = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default CreativeArea
+export default CreativeArea;

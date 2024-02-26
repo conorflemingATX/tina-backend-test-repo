@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Vector from "../../images/bigdata-analytics/vector.png"
+import Vector from "../../images/bigdata-analytics/vector.png";
 
 const IndustriesWeServe = () => {
   return (
@@ -105,7 +105,7 @@ const IndustriesWeServe = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default IndustriesWeServe
+export default IndustriesWeServe;

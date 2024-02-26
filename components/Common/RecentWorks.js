@@ -1,24 +1,26 @@
-import React from "react"
-import Link from 'next/link'
-import * as Icon from "react-feather"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import Link from "next/link";
+import * as Icon from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
 // Work Images
-import WorksImage1 from "../../images/works-image/works-image1.jpg"
-import WorksImage2 from "../../images/works-image/works-image2.jpg"
-import WorksImage3 from "../../images/works-image/works-image3.jpg"
-import WorksImage4 from "../../images/works-image/works-image4.jpg"
-import WorksImage5 from "../../images/works-image/works-image5.jpg"
+import WorksImage1 from "../../images/works-image/works-image1.jpg";
+import WorksImage2 from "../../images/works-image/works-image2.jpg";
+import WorksImage3 from "../../images/works-image/works-image3.jpg";
+import WorksImage4 from "../../images/works-image/works-image4.jpg";
+import WorksImage5 from "../../images/works-image/works-image5.jpg";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape4 from "../../images/shape4.svg"
-import Head from "next/head"
+import Shape2 from "../../images/shape2.svg";
+import Shape4 from "../../images/shape4.svg";
+import Head from "next/head";
 
-const RecentWorks = ({data}) => {
-  const {heading,text,RecentWorks} = data;
-  const fullServices = Array.isArray(RecentWorks) ? RecentWorks.slice(0,8): null;
+const RecentWorks = ({ data }) => {
+  const { heading, text, RecentWorks } = data;
+  const fullServices = Array.isArray(RecentWorks)
+    ? RecentWorks.slice(0, 8)
+    : null;
   return (
     <>
       <div className="works-area pt-80 pb-50 bg-f7fafd">
@@ -26,9 +28,7 @@ const RecentWorks = ({data}) => {
           <div className="section-title">
             <h2>{heading}</h2>
             <div className="bar"></div>
-            <p>
-             {text}
-            </p>
+            <p>{text}</p>
           </div>
         </div>
         <Swiper
@@ -58,28 +58,23 @@ const RecentWorks = ({data}) => {
           }}
           modules={[Pagination, Autoplay]}
           className="works-slides"
-        > 
-
-     {fullServices != null
-       ? fullServices.map(({Heading, text, worksimage}, i) => {
-        return (
-          <SwiperSlide key={i + "service"} className="single-works">
-          <img src={worksimage} alt="Works" />
-          {/* <Link href="/project-details" className="icon">
+        >
+          {fullServices != null
+            ? fullServices.map(({ Heading, text, worksimage }, i) => {
+                return (
+                  <SwiperSlide key={i + "service"} className="single-works">
+                    <img src={worksimage} alt="Works" />
+                    {/* <Link href="/project-details" className="icon">
             <Icon.Settings />
           </Link> */}
-          <div className="works-content">
-            <h3
-              style={{ color: "white" }}>{Heading}
-            </h3>
-            <p>
-              {text}
-            </p>
-          </div>
-        </SwiperSlide>
-        );
-       })
-      : null }  
+                    <div className="works-content">
+                      <h3 style={{ color: "white" }}>{Heading}</h3>
+                      <p>{text}</p>
+                    </div>
+                  </SwiperSlide>
+                );
+              })
+            : null}
         </Swiper>
 
         {/* Shape Images */}
@@ -97,7 +92,7 @@ const RecentWorks = ({data}) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default RecentWorks
+export default RecentWorks;

@@ -1,7 +1,7 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
-import ShopImage1 from "../../images/shop-image/shop-image1.jpg"
+import ShopImage1 from "../../images/shop-image/shop-image1.jpg";
 
 const QuickViewModal = () => {
   return (
@@ -66,7 +66,7 @@ const QuickViewModal = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default QuickViewModal
+export default QuickViewModal;

@@ -5,6 +5,7 @@ import Page from "../components/Page";
 
 export default (props) => <Page {...props} />;
 
+// Update all static path functions to use the new filenames format.
 export async function getStaticPaths() {
     // Filter by pageType === "none" || == null.
     const pagesResponse = await client.queries.pageConnection({
@@ -12,9 +13,13 @@ export async function getStaticPaths() {
     });
     let paths = pagesResponse?.data?.pageConnection?.edges
         ?.map(({ node }) => node)
-        ?.map(({ _sys }) => ({
-            params: { page: _sys.filename }
-        }));
+        ?.reduce((ps, { _sys }) => {
+            const filename = _sys.filename.split("__")[1];
+            if (filename != null) ps.push({
+                params: { page: filename }
+            });
+            return ps;
+        }, []);
     paths = paths != null ? paths : [];
 
     return { paths, fallback: false };
@@ -24,7 +29,7 @@ export const getStaticProps = async (context) => {
     const pageName = context.params.page;
     
     const { data, query, variables } = await client.queries.page({
-        relativePath: `${pageName}.mdx`,
+        relativePath: `none__${pageName}.mdx`,
     });
 
     return {

@@ -3,28 +3,28 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 trigger:
   branches:
     include:
-    - main
+      - main
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '18.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "18.x"
+    displayName: "Install Node.js"
 
-- script: |
-    cd gatsby-site
-    npm ci
-    npm run build
-  displayName: 'tina and next build...'
- 
-- task: PublishBuildArtifacts@1
-  displayName: Publish Build Artifacts
-  inputs:
-    PathtoPublish: 'out'
-    ArtifactName: 'website'
-    publishLocation: 'Container'
+  - script: |
+      cd gatsby-site
+      npm ci
+      npm run build
+    displayName: "tina and next build..."
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Build Artifacts
+    inputs:
+      PathtoPublish: "out"
+      ArtifactName: "website"
+      publishLocation: "Container"

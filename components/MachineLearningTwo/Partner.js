@@ -1,21 +1,21 @@
-import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay } from "swiper"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
-import PartnerImg1 from "../../images/partner-img/partner-1.png"
-import PartnerHoverImg1 from "../../images/partner-img/partner-hover1.png"
-import PartnerImg2 from "../../images/partner-img/partner-2.png"
-import PartnerHoverImg2 from "../../images/partner-img/partner-hover2.png"
-import PartnerImg3 from "../../images/partner-img/partner-3.png"
-import PartnerHoverImg3 from "../../images/partner-img/partner-hover3.png"
-import PartnerImg4 from "../../images/partner-img/partner-10.png"
-import PartnerHoverImg4 from "../../images/partner-img/partner-hover10.png"
-import PartnerImg5 from "../../images/partner-img/partner-5.png"
-import PartnerHoverImg5 from "../../images/partner-img/partner-hover5.png"
-import PartnerImg6 from "../../images/partner-img/partner-6.png"
-import PartnerHoverImg6 from "../../images/partner-img/partner-hover6.png"
-import PartnerImg7 from "../../images/partner-img/partner-7.png"
-import PartnerHoverImg7 from "../../images/partner-img/partner-hover7.png"
+import PartnerImg1 from "../../images/partner-img/partner-1.png";
+import PartnerHoverImg1 from "../../images/partner-img/partner-hover1.png";
+import PartnerImg2 from "../../images/partner-img/partner-2.png";
+import PartnerHoverImg2 from "../../images/partner-img/partner-hover2.png";
+import PartnerImg3 from "../../images/partner-img/partner-3.png";
+import PartnerHoverImg3 from "../../images/partner-img/partner-hover3.png";
+import PartnerImg4 from "../../images/partner-img/partner-10.png";
+import PartnerHoverImg4 from "../../images/partner-img/partner-hover10.png";
+import PartnerImg5 from "../../images/partner-img/partner-5.png";
+import PartnerHoverImg5 from "../../images/partner-img/partner-hover5.png";
+import PartnerImg6 from "../../images/partner-img/partner-6.png";
+import PartnerHoverImg6 from "../../images/partner-img/partner-hover6.png";
+import PartnerImg7 from "../../images/partner-img/partner-7.png";
+import PartnerHoverImg7 from "../../images/partner-img/partner-hover7.png";
 
 const PartnerStyleTwo = () => {
   return (
@@ -82,7 +82,7 @@ const PartnerStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PartnerStyleTwo
+export default PartnerStyleTwo;

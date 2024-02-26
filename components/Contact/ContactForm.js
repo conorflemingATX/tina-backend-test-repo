@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import ContactImg from "../../images/contact-img.png"
+import ContactImg from "../../images/contact-img.png";
 
 const ContactForm = () => {
   return (
@@ -89,7 +89,7 @@ const ContactForm = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

@@ -1,18 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import AgencyServicesImg1 from "../../images/agency-image/agency-services-img1.jpg"
-import AgencyServicesImg2 from "../../images/agency-image/agency-services-img2.jpg"
-import AgencyServicesImg3 from "../../images/agency-image/agency-services-img3.jpg"
-import AgencyServicesImg4 from "../../images/agency-image/agency-services-img4.jpg"
-import AgencyServicesImg5 from "../../images/agency-image/agency-services-img5.jpg"
-import AgencyServicesImg6 from "../../images/agency-image/agency-services-img6.jpg"
+import AgencyServicesImg1 from "../../images/agency-image/agency-services-img1.jpg";
+import AgencyServicesImg2 from "../../images/agency-image/agency-services-img2.jpg";
+import AgencyServicesImg3 from "../../images/agency-image/agency-services-img3.jpg";
+import AgencyServicesImg4 from "../../images/agency-image/agency-services-img4.jpg";
+import AgencyServicesImg5 from "../../images/agency-image/agency-services-img5.jpg";
+import AgencyServicesImg6 from "../../images/agency-image/agency-services-img6.jpg";
 
 // Shape Images
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const OurServices = () => {
   return (
@@ -149,7 +149,7 @@ const OurServices = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default OurServices
+export default OurServices;

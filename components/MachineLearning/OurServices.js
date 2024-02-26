@@ -1,19 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 // Service Images
-import ServiceImage1 from "../../images/services-image/service-image1.png"
-import ServiceImage2 from "../../images/services-image/service-image2.png"
-import ServiceImage3 from "../../images/services-image/service-image3.png"
-import ServiceImage4 from "../../images/services-image/service-image4.png"
-import ServiceImage5 from "../../images/services-image/service-image5.png"
-import ServiceImage6 from "../../images/services-image/service-image6.png"
+import ServiceImage1 from "../../images/services-image/service-image1.png";
+import ServiceImage2 from "../../images/services-image/service-image2.png";
+import ServiceImage3 from "../../images/services-image/service-image3.png";
+import ServiceImage4 from "../../images/services-image/service-image4.png";
+import ServiceImage5 from "../../images/services-image/service-image5.png";
+import ServiceImage6 from "../../images/services-image/service-image6.png";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const OurServices = () => {
   return (
@@ -144,7 +144,7 @@ const OurServices = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default OurServices
+export default OurServices;

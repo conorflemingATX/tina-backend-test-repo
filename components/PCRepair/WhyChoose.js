@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
 const WhyChoose = () => {
   return (
@@ -83,7 +83,7 @@ const WhyChoose = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WhyChoose
+export default WhyChoose;

@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
 const OurFeatures = () => {
   return (
@@ -110,7 +110,7 @@ const OurFeatures = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default OurFeatures
+export default OurFeatures;

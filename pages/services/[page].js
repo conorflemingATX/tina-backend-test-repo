@@ -12,9 +12,13 @@ export async function getStaticPaths() {
 
     let paths = pagesResponse?.data?.pageConnection?.edges
         ?.map(({ node }) => node)
-        ?.map(({ _sys }) => ({
-            params: { page: _sys.filename }
-        }));
+        ?.reduce((ps, { _sys }) => {
+            const filename = _sys.filename.split("__")[1];
+            if (filename != null) ps.push({
+                params: { page: filename }
+            });
+            return ps;
+        }, []);
     paths = paths != null ? paths : [];
 
     return { paths, fallback: false };
@@ -24,7 +28,7 @@ export const getStaticProps = async (context) => {
     const pageName = context.params.page;
     
     const { data, query, variables } = await client.queries.page({
-        relativePath: `${pageName}.mdx`,
+        relativePath: `services__${pageName}.mdx`,
     });
 
     return {

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const DomainSearch = () => {
   return (
@@ -70,7 +70,7 @@ const DomainSearch = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DomainSearch
+export default DomainSearch;

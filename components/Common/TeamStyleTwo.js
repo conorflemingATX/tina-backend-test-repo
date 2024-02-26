@@ -1,10 +1,10 @@
-import React from "react"
-import * as Icon from "react-feather"
+import React from "react";
+import * as Icon from "react-feather";
 
-import Team1 from "../../images/team-image/team1.jpg"
-import Team2 from "../../images/team-image/team2.jpg"
-import Team3 from "../../images/team-image/team3.jpg"
-import Team4 from "../../images/team-image/team4.jpg"
+import Team1 from "../../images/team-image/team1.jpg";
+import Team2 from "../../images/team-image/team2.jpg";
+import Team3 from "../../images/team-image/team3.jpg";
+import Team4 from "../../images/team-image/team4.jpg";
 
 const TeamStyleTwo = () => {
   return (
@@ -260,7 +260,7 @@ const TeamStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default TeamStyleTwo
+export default TeamStyleTwo;

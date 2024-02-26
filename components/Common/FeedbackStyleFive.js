@@ -1,10 +1,10 @@
-import React from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
-import Client1 from "../../images/client-image/client1.jpg"
-import Client2 from "../../images/client-image/client2.jpg"
-import Client3 from "../../images/client-image/client3.jpg"
+import Client1 from "../../images/client-image/client1.jpg";
+import Client2 from "../../images/client-image/client2.jpg";
+import Client3 from "../../images/client-image/client3.jpg";
 
 const FeedbackStyleFive = () => {
   return (
@@ -12,7 +12,7 @@ const FeedbackStyleFive = () => {
       <div className="agency-portfolio-feedback-area ptb-80">
         <div className="container">
           <Swiper
-            slidesPerView={1} 
+            slidesPerView={1}
             pagination={{
               clickable: true,
             }}
@@ -63,7 +63,7 @@ const FeedbackStyleFive = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default FeedbackStyleFive
+export default FeedbackStyleFive;

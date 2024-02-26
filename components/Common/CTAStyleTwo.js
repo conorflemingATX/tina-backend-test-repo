@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 const CTAStyleTwo = () => {
   return (
@@ -16,7 +16,7 @@ const CTAStyleTwo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default CTAStyleTwo
+export default CTAStyleTwo;

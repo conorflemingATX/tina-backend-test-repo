@@ -1,33 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as Icon from "react-feather"
+import React from "react";
+import { Link } from "gatsby";
+import * as Icon from "react-feather";
 
-import Logo from "../../images/logo.png"
+import Logo from "../../images/logo.png";
 
 const NavbarStyleTwo = () => {
-  const [menu, setMenu] = React.useState(true)
+  const [menu, setMenu] = React.useState(true);
 
   const toggleNavbar = () => {
-    setMenu(!menu)
-  }
+    setMenu(!menu);
+  };
 
   React.useEffect(() => {
-    let elementId = document.getElementById("header")
+    let elementId = document.getElementById("header");
     document.addEventListener("scroll", () => {
       if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky")
+        elementId.classList.add("is-sticky");
       } else {
-        elementId.classList.remove("is-sticky")
+        elementId.classList.remove("is-sticky");
       }
-    })
-  })
+    });
+  });
 
   const classOne = menu
     ? "collapse navbar-collapse"
-    : "collapse navbar-collapse show"
+    : "collapse navbar-collapse show";
   const classTwo = menu
     ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right"
+    : "navbar-toggler navbar-toggler-right";
 
   return (
     <header id="header" className="headroom navbar-style-two">
@@ -57,8 +57,8 @@ const NavbarStyleTwo = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                   <Link
-                    to="#" 
-                    onClick={e => e.preventDefault()}
+                    to="#"
+                    onClick={(e) => e.preventDefault()}
                     className="nav-link"
                   >
                     Home <Icon.ChevronDown />
@@ -180,7 +180,7 @@ const NavbarStyleTwo = () => {
                 <li className="nav-item">
                   <Link
                     to="#"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     className="nav-link"
                   >
                     About <Icon.ChevronDown />
@@ -225,7 +225,7 @@ const NavbarStyleTwo = () => {
                 <li className="nav-item">
                   <Link
                     to="#"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     className="nav-link"
                   >
                     Pages <Icon.ChevronDown />
@@ -235,7 +235,7 @@ const NavbarStyleTwo = () => {
                     <li className="nav-item">
                       <Link
                         to="#"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         className="nav-link"
                       >
                         Features <Icon.ChevronDown />
@@ -269,7 +269,7 @@ const NavbarStyleTwo = () => {
                     <li className="nav-item">
                       <Link
                         to="#"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         className="nav-link"
                       >
                         Services <Icon.ChevronDown />
@@ -358,7 +358,7 @@ const NavbarStyleTwo = () => {
                     <li className="nav-item">
                       <Link
                         to="#"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         className="nav-link"
                       >
                         Projects <Icon.ChevronDown />
@@ -425,7 +425,7 @@ const NavbarStyleTwo = () => {
                     <li className="nav-item">
                       <Link
                         to="#"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         className="nav-link"
                       >
                         User <Icon.ChevronDown />
@@ -504,8 +504,8 @@ const NavbarStyleTwo = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="#" 
-                    onClick={e => e.preventDefault()}
+                    to="#"
+                    onClick={(e) => e.preventDefault()}
                     className="nav-link"
                   >
                     Shop <Icon.ChevronDown />
@@ -561,7 +561,7 @@ const NavbarStyleTwo = () => {
                 <li className="nav-item">
                   <Link
                     to="#"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     className="nav-link"
                   >
                     Blog <Icon.ChevronDown />
@@ -678,7 +678,7 @@ const NavbarStyleTwo = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default NavbarStyleTwo
+export default NavbarStyleTwo;

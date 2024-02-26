@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 function Seo({ description, title, children }) {
   const metaDescription = description || "REPLACE ME";
@@ -17,7 +17,7 @@ function Seo({ description, title, children }) {
       <meta name="twitter:description" content={metaDescription} />
       {children}
     </>
-  )
+  );
 }
 
-export default Seo
+export default Seo;

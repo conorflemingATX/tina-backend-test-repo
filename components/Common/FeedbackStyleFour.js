@@ -1,18 +1,18 @@
-import React from "react"
-import * as Icon from "react-feather"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import React from "react";
+import * as Icon from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
 // Client Images
-import Client1 from "../../images/client-image/client1.jpg"
-import Client2 from "../../images/client-image/client2.jpg"
-import Client3 from "../../images/client-image/client3.jpg"
+import Client1 from "../../images/client-image/client1.jpg";
+import Client2 from "../../images/client-image/client2.jpg";
+import Client3 from "../../images/client-image/client3.jpg";
 
 // Shape Images
-import Shape1 from "../../images/shape1.png"
-import Shape2 from "../../images/shape2.svg"
-import Shape3 from "../../images/shape3.svg"
-import Shape4 from "../../images/shape4.svg"
+import Shape1 from "../../images/shape1.png";
+import Shape2 from "../../images/shape2.svg";
+import Shape3 from "../../images/shape3.svg";
+import Shape4 from "../../images/shape4.svg";
 
 const FeedbackStyleFour = () => {
   return (
@@ -136,7 +136,7 @@ const FeedbackStyleFour = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default FeedbackStyleFour
+export default FeedbackStyleFour;

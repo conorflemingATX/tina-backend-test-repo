@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "NODE_OPTIONS='--inspect' tinacms dev -c \"next dev\"",
+=======
+    "dev": "tinacms dev -c \"next dev\"",
+>>>>>>> devops/main
     "build": "tinacms dev -c \"npm run build:export\"",
     "build:export": "next build && next export",
     "start": "tinacms build && next start",

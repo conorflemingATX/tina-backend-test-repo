@@ -3,13 +3,14 @@ import navBar from "./collections/navBar.js";
 import page from "./collections/page";
 import post from "./collections/post";
 
+const contentApiUrlOverride = process.env["NODE_ENV"] === "staging" ? "/api/tina/gql" : null;
+
 export const config = defineConfig({
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+    contentApiUrlOverride,
   branch:
     process.env.NEXT_PUBLIC_TINA_BRANCH || // custom branch env override
     process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF || // Vercel branch env
     process.env.HEAD, // Netlify branch env
-  token: process.env.TINA_TOKEN,
   media: {
     // If you wanted cloudinary do this
     // loadCustomStore: async () => {

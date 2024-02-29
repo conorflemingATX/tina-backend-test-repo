@@ -6,12 +6,13 @@
     "dev": "tinacms dev -c \"next dev\"",
     "build": "cross-env NODE_ENV='production' tinacms dev -c \"npm run build:export\"",
     "build:export": "next build",
-    "start": "tinacms build && next start",
+    "start": "tinacms dev -c \"next start\"",
     "lint": "next lint"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "mongodb-level": "^0.0.4",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-accessible-accordion": "^5.0.0",
@@ -21,7 +22,8 @@
     "react-slick": "^0.29.0",
     "react-tabs": "^6.0.1",
     "swiper": "^9.3.1",
-    "tinacms": "^1.5.24"
+    "tinacms": "^1.5.24",
+    "tinacms-gitprovider-github": "^1.0.3"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.5.34",

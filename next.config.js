@@ -1,5 +1,12 @@
+const output =
+    process.env["NODE_ENV"] === "production"
+        ? "export"
+        : process.env["NODE_ENV"] === "staging"
+            ? "standalone"
+            : null;
+
 module.exports = {
-    output: "export",
+    output,
     images: { unoptimized: true },
     async rewrites() {
         return [
